@@ -54,3 +54,8 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem "react-rails", "~> 2.6"
+gem 'bootstrap', '~> 4.3.1'
+gem 'jquery-rails'
+gem 'jquery-ui-rails'
+gem "font-awesome-rails", '~> 4.7'
+gem 'gon'
