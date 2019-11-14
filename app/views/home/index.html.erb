@@ -1,5 +1,36 @@
-<div class="display-1">
-  <a href="#" class="btn">Button</a>
-  <hr>
-  Home Page
+<%= render 'application/navbar' %>
+
+<div class="d-flex text-center sliderWrapper parallax-window full-height" id="main-image">
+  <div class="container align-self-center p-2 bd-highlight white slogan-wrapper">
+    <h1 class="display-2 text-center slogan-text blue"><b>Hi</b> my name is Fateme</h1>
+    <h1 class="text-center slogan-text">Blah blalla bla</h1>
+    <h1 class="text-center slogan-text">Some more info here, slogan or action, also add arrow down</h1>
+  </div>
 </div>
+
+<style>
+  .sliderWrapper {
+    background-position: center center;
+    transition: background-image 0.3s ease-in-out;
+    height: 100%;
+    display: block;
+    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-size: cover;
+    z-index: -1;
+  }
+
+  .slogan-wrapper {
+    margin-top: -10%;
+  }
+
+  #main-image {
+    background-image: url("<%= asset_path "background.png" %>");
+  }
+
+  .blue {
+    color: #0079B1;
+  }
+
+</style>
