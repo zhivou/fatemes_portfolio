@@ -1,28 +1,67 @@
 <%= render 'application/navbar' %>
 
-<div class="d-flex text-center sliderWrapper parallax-window full-height" id="main-image">
-  <div class="container align-self-center p-2 bd-highlight white slogan-wrapper">
+<div class="d-flex text-center sliderWrapper parallax-window full-height">
+  <div class="container align-self-center p-2 bd-highlight slogan-wrapper">
+    <%= image_tag 'gears.png', id: "logo" %>
     <h1 class="display-2 text-center slogan-text blue"><b>Hi</b> my name is Fateme</h1>
     <h1 class="text-center slogan-text">Blah blalla bla</h1>
-    <h1 class="text-center slogan-text">Some more info here, slogan or action, also add arrow down</h1>
+    <h1 class="text-center slogan-text"></h1>
   </div>
 </div>
 
+<div class="container pb-5">
+  <h1 class="display-4">Blogs</h1>
+  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+  <p>Will limit this to 5-10 latest blog posts but with a link to the blogs page</p>
+</div>
+
+<div class="container">
+  <table>
+    <thead>
+    <tr>
+      <th>Title</th>
+      <th>Body</th>
+      <th>Date</th>
+      <th colspan="3"></th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <% @blogposts.each do |blogpost| %>
+      <tr>
+        <td><%= blogpost.title %></td>
+        <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type</td>
+        <td><%= blogpost.created_at %></td>
+        <td><%= link_to 'Show', blogpost %></td>
+        <td><%= link_to 'Edit', edit_blogpost_path(blogpost) %></td>
+        <td><%= link_to 'Destroy', blogpost, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+    </tbody>
+  </table>
+</div>
+
+<div class="container pt-5 pb-5">
+  <h1 class="display-4">Latest Projects</h1>
+  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+</div>
+
 <style>
+
+  #logo {
+    width: 150px;
+  }
+
   .sliderWrapper {
     background-position: center center;
     transition: background-image 0.3s ease-in-out;
     height: 100%;
     display: block;
     position: relative;
-    min-height: 100vh;
+    min-height: 40vh;
     overflow-x: hidden;
     background-size: cover;
     z-index: -1;
-  }
-
-  .slogan-wrapper {
-    margin-top: -10%;
   }
 
   #main-image {

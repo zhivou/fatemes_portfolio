@@ -3,5 +3,6 @@
 #
 class HomeController < ApplicationController
   def index
+    @blogposts = Blogpost.all
   end
 end
