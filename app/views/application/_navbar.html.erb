@@ -2,12 +2,12 @@
 
 <nav id="nav">
   <ul class="main text-center pl-0">
-    <li><%= image_tag 'fateme_1.jpeg', class: "avatar" %></li>
+    <li class="pt-3 pb-3"><%= image_tag 'fateme_1.jpeg', class: "avatar" %></li>
     <li><a href="#">About me</a></li>
     <li><a href="#">CV</a></li>
     <li><a href="#">Teaching</a></li>
     <li><a href="#">Work Experience</a></li>
-    <li><a href="#">Blog</a></li>
+    <li><%= link_to "Blogs", blogposts_path %></li>
     <li><a href="#">Contact Me</a></li>
   </ul>
 </nav>
@@ -26,7 +26,7 @@
   .avatar {
     border-radius: 50%;
     border: solid 6px #CCCCCC;
-    width: 300px;
+    width: 200px;
   }
 
   /*  BURGER MENU
@@ -108,7 +108,7 @@
   ========================================== */
 
   #nav {
-    background: #00689F;
+    background: #00487B;
     position: fixed;
     z-index: 20;
     top: 0;
@@ -123,10 +123,10 @@
     -ms-transform: translateX(100%);
     -o-transform: translateX(100%);
     transform: translateX(100%);
-    -webkit-transition: transform 0.55s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-    -moz-transition: transform 0.55s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-    -o-transition: transform 0.55s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-    transition: transform 0.55s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    -webkit-transition: transform 0.15s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    -moz-transition: transform 0.15s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    -o-transition: transform 0.15s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    transition: transform 0.15s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   }
   #nav.show {
     -webkit-transform: translateX(0px);
@@ -214,13 +214,11 @@
     margin-bottom: 0px;
   }
   #nav ul.main li a {
-    font-family: 'Amatic SC', cursive;
     color: #CCCCCC;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 4rem;
+    font-size: 3rem;
     display: block;
-    padding: 10px 10px;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
