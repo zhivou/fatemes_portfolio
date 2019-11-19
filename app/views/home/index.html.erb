@@ -1,6 +1,5 @@
-<div class="d-flex text-center sliderWrapper parallax-window full-height">
+<div class="d-flex text-center sliderWrapper parallax-window full-height" data-parallax="scroll" data-image-src="<%= asset_path "laptop.jpg" %>">
   <div class="container align-self-center p-2 bd-highlight slogan-wrapper">
-    <%= image_tag 'gears.png', id: "logo" %>
     <h1 class="display-2 text-center slogan-text blue"><b>Hi</b> my name is Fateme</h1>
     <h1 class="text-center slogan-text">Blah blalla bla</h1>
     <h1 class="text-center slogan-text"></h1>
@@ -44,19 +43,15 @@
   <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
 </div>
 
+<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 <style>
-
-  #logo {
-    width: 150px;
-  }
-
   .sliderWrapper {
     background-position: center center;
     transition: background-image 0.3s ease-in-out;
     height: 100%;
     display: block;
     position: relative;
-    min-height: 40vh;
+    min-height: 80vh;
     overflow-x: hidden;
     background-size: cover;
     z-index: -1;
