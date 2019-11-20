@@ -80,28 +80,6 @@ span {
   flex-direction: row;
 }
 
-.text-block-2 {
-  position: relative;
-  left: 0px;
-  display: block;
-  margin-top: 40px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  font-family: Georgia, Times, 'Times New Roman', serif;
-  font-size: 100px;
-  line-height: 20px;
-  font-style: normal;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-  white-space: normal;
-}
-
 .div-block-3 {
   position: relative;
   display: block;
@@ -179,6 +157,13 @@ span {
   display: block;
 }
 
+.header-font {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: 100px;
+  text-transform: uppercase;
+}
+
 .text-block-5 {
   position: relative;
   left: 0%;
@@ -189,7 +174,7 @@ span {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 40px;
+  margin-top: 20px;
   margin-right: auto;
   margin-left: auto;
   padding-top: 10px;
