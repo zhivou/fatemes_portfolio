@@ -1,5 +1,5 @@
 @import "bootstrap";
-@import url('https://fonts.googleapis.com/css?family=Muli:500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
 @import "fontawesome.min";
 
 .full-height {
@@ -7,5 +7,9 @@
 }
 
 body {
-  font-family: 'Muli', sans-serif;
+  font-family: 'Roboto Slab', serif;
+}
+
+.underline_border {
+  border-bottom: 2px solid black !important;
 }
