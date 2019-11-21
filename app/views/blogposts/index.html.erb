@@ -15,7 +15,7 @@
         <div class="col-3">
           <% @blogposts[0,4].each do |blogpost| %>
             <% if @count < 4 %>
-              <a href="blogposts/<%= blogpost.id %>">
+              <a href="blogposts/<%= blogpost.id %>" class="blogpost">
                 <div class="row-4">
                   <h1 class="heading-2"><%= blogpost.title %></h1>
                   <div class="text-block-7">posted <%= blogpost.created_at.strftime("%B %d, %Y") %></div>
@@ -30,7 +30,7 @@
         <div class="col-3">
           <% @blogposts[5,8].each do |blogpost| %>
             <% if @count < 8 %>
-              <a href="blogposts/<%= blogpost.id %>">
+              <a href="blogposts/<%= blogpost.id %>" class="blogpost">
                 <div class="row-4">
                   <h1 class="heading-2"><%= blogpost.title %></h1>
                   <div class="text-block-7">posted <%= blogpost.created_at.strftime("%B %d, %Y") %></div>
@@ -45,7 +45,7 @@
       <div class="col-3">
         <% @blogposts[9,12].each do |blogpost| %>
           <% if @count < 12 %>
-            <a href="blogposts/<%= blogpost.id %>">
+            <a href="blogposts/<%= blogpost.id %>" class="blogpost">
               <div class="row-4">
                 <h1 class="heading-2"><%= blogpost.title %></h1>
                 <div class="text-block-7">posted <%= blogpost.created_at.strftime("%B %d, %Y") %></div>
@@ -60,7 +60,7 @@
       <div class="col-3">
         <% @blogposts[13,16].each do |blogpost| %>
           <% if @count < 16 %>
-            <a href="blogposts/<%= blogpost.id %>">
+            <a href="blogposts/<%= blogpost.id %>" class="blogpost">
               <div class="row-4 no-border">
                 <h1 class="heading-2"><%= blogpost.title %></h1>
                 <div class="text-block-7">posted <%= blogpost.created_at.strftime("%B %d, %Y") %></div>
