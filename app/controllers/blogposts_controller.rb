@@ -4,7 +4,7 @@ class BlogpostsController < ApplicationController
   # GET /blogposts
   # GET /blogposts.json
   def index
-    @blogposts = Blogpost.all
+    @blogposts = Blogpost.order(id: :desc).page(params[:page]).per(16)
   end
 
   # GET /blogposts/1
@@ -69,6 +69,10 @@ class BlogpostsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def blogpost_params
-      params.require(:blogpost).permit(:title)
+      params.require(:blogpost).permit(
+        :title,
+        :main_image,
+        :body_area,
+        )
     end
 end

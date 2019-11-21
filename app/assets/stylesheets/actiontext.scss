@@ -34,3 +34,10 @@
     }
   }
 }
+
+trix-editor {
+  min-height: 300px !important;
+  &.form-control {
+    height: auto;
+  }
+}
