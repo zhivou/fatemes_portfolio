@@ -13,3 +13,30 @@ body {
 .underline_border {
   border-bottom: 2px solid black !important;
 }
+
+.upper_border {
+  border-top: 2px solid black !important;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.header-font {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: 100px;
+  text-transform: uppercase;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.blue {
+  color: #0099EA;
+}
+
+.red {
+  color: #cc0000;
+}
