@@ -1,5 +1,5 @@
 @import "bootstrap";
-@import url('https://fonts.googleapis.com/css?family=Muli:500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
 @import "fontawesome.min";
 
 .full-height {
@@ -7,5 +7,36 @@
 }
 
 body {
-  font-family: 'Muli', sans-serif;
+  font-family: 'Roboto Slab', serif;
+}
+
+.underline_border {
+  border-bottom: 2px solid black !important;
+}
+
+.upper_border {
+  border-top: 2px solid black !important;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.header-font {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: 100px;
+  text-transform: uppercase;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.blue {
+  color: #0099EA;
+}
+
+.red {
+  color: #cc0000;
 }
