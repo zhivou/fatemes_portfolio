@@ -1,5 +1,4 @@
 <%= stylesheet_link_tag "blogposts" %>
-<% @count = 0 %>
 
 <div class="newspaper pt-3 pr-5 pl-5 pb-5">
   <div class="text-center">
@@ -12,68 +11,64 @@
     <div class="row">
 
         <div class="col-3">
-          <% @blogposts[0,4].each do |blogpost| %>
-            <% if @count < 4 %>
-              <a href="blogposts/<%= blogpost.id %>" class="blogpost">
+          <% for blogpost in 0..3 do %>
+            <% unless @blogposts[blogpost].nil? %>
+              <a href="blogposts/<%= @blogposts[blogpost].id %>" class="blogpost">
                 <div class="row-4">
-                  <h1 class="heading-2"><%= blogpost.title %></h1>
-                  <div class="text-block-7">posted <%= blogpost.created_at.strftime("%B %d, %Y") %></div>
-                  <div class="text-block-6"><%= blogpost.body_area.to_plain_text.first(rand(300..450))%>...</div>
+                  <h1 class="heading-2"><%= @blogposts[blogpost].title %></h1>
+                  <div class="text-block-7">posted <%= @blogposts[blogpost].created_at.strftime("%B %d, %Y") %></div>
+                  <div class="text-block-6"><%= @blogposts[blogpost].body_area.to_plain_text.first(rand(300..450))%>...</div>
                 </div>
               </a>
-              <% @count +=1 %>
-            <% end %>
-          <% end %>
-        </div>
-
-        <div class="col-3">
-          <% @blogposts[5,8].each do |blogpost| %>
-            <% if @count < 8 %>
-              <a href="blogposts/<%= blogpost.id %>" class="blogpost">
-                <div class="row-4">
-                  <h1 class="heading-2"><%= blogpost.title %></h1>
-                  <div class="text-block-7">posted <%= blogpost.created_at.strftime("%B %d, %Y") %></div>
-                  <div class="text-block-6"><%= blogpost.body_area.to_plain_text.first(rand(300..450))%>...</div>
-                </div>
-              </a>
-              <% @count +=1 %>
             <% end %>
           <% end %>
         </div>
 
       <div class="col-3">
-        <% @blogposts[9,12].each do |blogpost| %>
-          <% if @count < 12 %>
-            <a href="blogposts/<%= blogpost.id %>" class="blogpost">
+        <% for blogpost in 4..7 do %>
+          <% unless @blogposts[blogpost].nil? %>
+            <a href="blogposts/<%= @blogposts[blogpost].id %>" class="blogpost">
               <div class="row-4">
-                <h1 class="heading-2"><%= blogpost.title %></h1>
-                <div class="text-block-7">posted <%= blogpost.created_at.strftime("%B %d, %Y") %></div>
-                <div class="text-block-6"><%= blogpost.body_area.to_plain_text.first(rand(300..450))%>...</div>
+                <h1 class="heading-2"><%= @blogposts[blogpost].title %></h1>
+                <div class="text-block-7">posted <%= @blogposts[blogpost].created_at.strftime("%B %d, %Y") %></div>
+                <div class="text-block-6"><%= @blogposts[blogpost].body_area.to_plain_text.first(rand(300..450))%>...</div>
               </div>
             </a>
-            <% @count +=1 %>
           <% end %>
         <% end %>
       </div>
 
       <div class="col-3">
-        <% @blogposts[13,16].each do |blogpost| %>
-          <% if @count < 16 %>
-            <a href="blogposts/<%= blogpost.id %>" class="blogpost">
-              <div class="row-4 no-border">
-                <h1 class="heading-2"><%= blogpost.title %></h1>
-                <div class="text-block-7">posted <%= blogpost.created_at.strftime("%B %d, %Y") %></div>
-                <div class="text-block-6"><%= blogpost.body_area.to_plain_text.first(rand(200..450))%>...</div>
+        <% for blogpost in 8..11 do %>
+          <% unless @blogposts[blogpost].nil? %>
+            <a href="blogposts/<%= @blogposts[blogpost].id %>" class="blogpost">
+              <div class="row-4">
+                <h1 class="heading-2"><%= @blogposts[blogpost].title %></h1>
+                <div class="text-block-7">posted <%= @blogposts[blogpost].created_at.strftime("%B %d, %Y") %></div>
+                <div class="text-block-6"><%= @blogposts[blogpost].body_area.to_plain_text.first(rand(300..450))%>...</div>
               </div>
             </a>
-            <% @count +=1 %>
           <% end %>
         <% end %>
       </div>
 
-
+      <div class="col-3">
+        <% for blogpost in 12..15 do %>
+          <% unless @blogposts[blogpost].nil? %>
+            <a href="blogposts/<%= @blogposts[blogpost].id %>" class="blogpost">
+              <div class="row-4">
+                <h1 class="heading-2"><%= @blogposts[blogpost].title %></h1>
+                <div class="text-block-7">posted <%= @blogposts[blogpost].created_at.strftime("%B %d, %Y") %></div>
+                <div class="text-block-6"><%= @blogposts[blogpost].body_area.to_plain_text.first(rand(300..450))%>...</div>
+              </div>
+            </a>
+          <% end %>
+        <% end %>
+      </div>
     </div>
   </div>
+
+  <%= paginate @blogposts %>
   <%= link_to 'New Blogpost', new_blogpost_path %>
   <br>
   <a href="">All right reserved <%= Date.today.strftime("%Y") %></a>
