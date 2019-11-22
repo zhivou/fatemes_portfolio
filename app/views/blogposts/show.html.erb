@@ -2,18 +2,31 @@
 <%= stylesheet_link_tag "blogposts" %>
 
 <div class="newspaper pt-3 pr-5 pl-5 pb-5">
-  <div class="text-center underline_border mb-3">
-    <div class="header-font"><%= @blogpost.title %></div>
-  </div>
-  <div class="container w-container">
-    <img src="<%= url_for(@blogpost.main_image) %>" class="img-fluid" alt="Responsive image">
-    <div class="div-block-7">
-      <div class="text-block-8"><%= "posted: #{@blogpost.created_at.strftime("%B %d, %Y")}" %></div>
+  <div class="row container-fluid">
+
+    <div class="col-12">
+      <div class="div-block-7">
+        <div class="text-block-8"><%= "posted: #{@blogpost.created_at.strftime("%B %d, %Y")}" %></div>
+      </div>
     </div>
-    <div class="text-block-9"><%= @blogpost.body_area %></div>
-    <div class="div-block-7">
-      <div class="text-block-8">By Fateme Esmaile, 2019</div>
+
+    <div class="col-8 no_padding">
+      <div class="d-flex text-center sliderWrapper parallax-window full-height" data-parallax="scroll" data-image-src="<%= url_for(@blogpost.main_image) %>">
+      </div>
     </div>
+
+    <div class="col-4 text-center stick-me">
+      <div class="header-font p-5"><%= @blogpost.title %></div>
+      <button class="btn btn-outline-dark">Back</button>
+    </div>
+
+    <div class="col-8">
+      <div class="text-block-9 p-5"><%= @blogpost.body_area %></div>
+      <div class="div-block-7">
+        <div class="text-block-8">By Fateme Esmaile, 2019</div>
+      </div>
+    </div>
+
   </div>
 
   <%= link_to 'Edit', edit_blogpost_path(@blogpost) %> |

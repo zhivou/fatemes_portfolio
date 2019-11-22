@@ -44,3 +44,9 @@ body {
 a:hover {
   color: #00487B !important;
 }
+
+.stick-me {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
