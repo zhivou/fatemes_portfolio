@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   resources :contacts, only: [:index]
   resources :services, only: [:index]
   resources :cvs, only: [:index]
+  resources :teachings, only: [:index]
 end
