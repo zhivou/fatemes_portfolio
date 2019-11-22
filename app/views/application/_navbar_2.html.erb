@@ -1,7 +1,7 @@
 <nav class="site-header sticky-top py-1">
   <div class="container col-8 d-flex flex-column flex-md-row justify-content-between">
     <a class="p-2 d-none d-md-inline-block upper" href="/">Home</a>
-    <a class="p-2 d-none d-md-inline-block upper" href="#">CV</a>
+    <%= link_to "CV", cvs_path, class: "py-2 d-none d-md-inline-block upper" %>
     <a class="p-2 d-none d-md-inline-block upper" href="#">Teaching</a>
     <%= link_to "Research", researches_path, class: "py-2 d-none d-md-inline-block upper" %>
     <%= link_to "Service", services_path, class: "py-2 d-none d-md-inline-block upper" %>
