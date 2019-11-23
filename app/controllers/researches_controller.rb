@@ -69,6 +69,10 @@ class ResearchesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def research_params
-      params.require(:research).permit(:title, publications_attributes: [:id, :name, :publisher, :_destroy])
+      params.require(:research).permit(
+        :title,
+        :main_image,
+        :body_area,
+        publications_attributes: [:id, :name, :publisher, :_destroy])
     end
 end
