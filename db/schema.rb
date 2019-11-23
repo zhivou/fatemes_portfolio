@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_11_22_013256) do
+ActiveRecord::Schema.define(version: 2019_11_23_000701) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -58,6 +58,15 @@ ActiveRecord::Schema.define(version: 2019_11_22_013256) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "publications", force: :cascade do |t|
+    t.string "name"
+    t.string "publisher"
+    t.bigint "research_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["research_id"], name: "index_publications_on_research_id"
+  end
+
   create_table "researches", force: :cascade do |t|
     t.string "title"
     t.datetime "created_at", precision: 6, null: false
@@ -65,4 +74,5 @@ ActiveRecord::Schema.define(version: 2019_11_22_013256) do
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
+  add_foreign_key "publications", "researches"
 end
