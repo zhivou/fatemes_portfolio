@@ -20,6 +20,19 @@
             <div>
               <%= research.body_area.to_plain_text.first(500) %>...
             </div>
+
+            <div class="mt-1 mb-1">
+              <span class="btn btn-secondary">
+                Publications <span class="badge badge-light"><%= research.publications.count %></span>
+                <span class="sr-only">unread messages</span>
+              </span>
+
+              <button type="button" class="btn btn-success">
+              Words <span class="badge badge-light"><%= research.body_area.to_plain_text.size %></span>
+              <span class="sr-only">unread messages</span>
+            </button>
+            </div>
+
             <div class="actions text-center p-3">
               <%= link_to 'Show', research %></td>
               <%= link_to 'Edit', edit_research_path(research) %></td>
@@ -30,10 +43,7 @@
       </div>
       <% end %>
 </div>
+<div class="container">
+  <%= link_to 'New Research', new_research_path %>
+</div>
 
-<br>
-
-<%= link_to 'New Research', new_research_path %>
-<%# research.publications.each do |p| %>
-<!--        <p><%#= p.name %>, <%#= p.publisher %></p>-->
-<%# end %>
