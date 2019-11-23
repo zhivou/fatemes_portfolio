@@ -16,6 +16,17 @@
     <%= form.text_field :title %>
   </div>
 
+  <div>
+    <%= form.fields_for :publications do |publications_form| %>
+      <%= render 'publication_fields', f:publications_form %>
+    <% end %>
+
+    <div>
+      <%= link_to_add_association 'Add Publications', form, :publications %>
+    </div>
+
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>
