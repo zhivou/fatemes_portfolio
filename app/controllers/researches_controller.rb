@@ -54,6 +54,7 @@ class ResearchesController < ApplicationController
   # DELETE /researches/1
   # DELETE /researches/1.json
   def destroy
+    @research.publications.destroy_all
     @research.destroy
     respond_to do |format|
       format.html { redirect_to researches_url, notice: 'Research was successfully destroyed.' }
