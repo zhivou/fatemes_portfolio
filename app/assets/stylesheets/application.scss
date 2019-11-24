@@ -66,3 +66,12 @@ a:hover {
   font-weight: 400;
   white-space: normal;
 }
+
+.page-link {
+  color: #333333 !important;
+}
+
+.active > a {
+  color: white !important;
+  background-color: #333333 !important;
+}
