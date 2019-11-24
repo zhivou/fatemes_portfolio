@@ -1,5 +1,5 @@
-<div class="container">
-  <div class="header-font text-center">
+<div class="container pt-3 pr-5 pl-5 pb-5">
+  <div class="header-font text-center text-break">
     My Projects
   </div>
 
@@ -28,7 +28,7 @@
               </span>
 
               <button type="button" class="btn btn-success">
-              Words <span class="badge badge-light"><%= research.body_area.to_plain_text.size %></span>
+              Words <span class="badge badge-light"><%= research.body_area.to_plain_text.split.size %></span>
               <span class="sr-only">unread messages</span>
             </button>
             </div>
