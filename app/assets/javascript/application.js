@@ -16,3 +16,4 @@
 //= require activestorage
 //= require turbolinks
 //= require parallax.min
+//= require cocoon

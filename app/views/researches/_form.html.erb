@@ -16,6 +16,26 @@
     <%= form.text_field :title %>
   </div>
 
+  <div>
+    <%= form.fields_for :publications do |publications_form| %>
+      <%= render 'publication_fields', f:publications_form %>
+    <% end %>
+
+    <div>
+      <%= link_to_add_association 'Add Publications', form, :publications %>
+    </div>
+
+  </div>
+
+  <div class="field">
+    <%= form.rich_text_area :body_area, id: :blog_body_area %>
+  </div>
+
+  <div class="field">
+    <%= form.label"Upload Main Picture" %>
+    <%= form.file_field :main_image, class: "m-4" %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>

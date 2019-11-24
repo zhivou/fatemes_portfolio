@@ -50,3 +50,28 @@ a:hover {
   position: sticky;
   top: 0;
 }
+
+
+.move_bottom {
+  position: absolute;
+  bottom: 0;
+}
+
+.reach-text {
+  padding-right: 20px;
+  padding-left: 20px;
+  font-family: Ubuntu, Helvetica, sans-serif;
+  font-size: 25px;
+  line-height: 45px;
+  font-weight: 400;
+  white-space: normal;
+}
+
+.page-link {
+  color: #333333 !important;
+}
+
+.active > a {
+  color: white !important;
+  background-color: #333333 !important;
+}

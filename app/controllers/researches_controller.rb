@@ -4,7 +4,8 @@ class ResearchesController < ApplicationController
   # GET /researches
   # GET /researches.json
   def index
-    @researches = Research.all
+    @researches = Research.order(id: :desc).page(params[:page]).per(10)
+
   end
 
   # GET /researches/1
@@ -54,6 +55,7 @@ class ResearchesController < ApplicationController
   # DELETE /researches/1
   # DELETE /researches/1.json
   def destroy
+    @research.publications.destroy_all
     @research.destroy
     respond_to do |format|
       format.html { redirect_to researches_url, notice: 'Research was successfully destroyed.' }
@@ -69,6 +71,10 @@ class ResearchesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def research_params
-      params.require(:research).permit(:title)
+      params.require(:research).permit(
+        :title,
+        :main_image,
+        :body_area,
+        publications_attributes: [:id, :name, :publisher, :_destroy])
     end
 end

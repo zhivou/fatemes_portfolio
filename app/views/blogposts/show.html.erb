@@ -11,7 +11,7 @@
     </div>
 
     <div class="col-8 no_padding">
-      <div class="d-flex text-center sliderWrapper parallax-window full-height" data-parallax="scroll" data-image-src="<%= url_for(@blogpost.main_image) %>">
+      <div class="d-flex text-center sliderWrapper parallax-window" style="min-height: 70vh" data-parallax="scroll" data-image-src="<%= url_for(@blogpost.main_image) %>">
       </div>
     </div>
 
@@ -21,7 +21,7 @@
     </div>
 
     <div class="col-8">
-      <div class="text-block-9 p-5"><%= @blogpost.body_area %></div>
+      <div class="reach-text p-5"><%= @blogpost.body_area %></div>
       <div class="div-block-7">
         <div class="text-block-8">By Fateme Esmaile, 2019</div>
       </div>

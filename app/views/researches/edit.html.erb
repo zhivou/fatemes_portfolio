@@ -1,6 +1,10 @@
-<h1>Editing Research</h1>
+<%= stylesheet_link_tag "actiontext" %>
 
-<%= render 'form', research: @research %>
+<div class="container mt-3 mb-3">
+  <h1>Editing Research</h1>
 
-<%= link_to 'Show', @research %> |
-<%= link_to 'Back', researches_path %>
+  <%= render 'form', research: @research %>
+
+  <%= link_to 'Show', @research %> |
+  <%= link_to 'Back', researches_path %>
+</div>

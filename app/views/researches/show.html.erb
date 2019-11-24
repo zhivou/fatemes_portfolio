@@ -1,9 +1,30 @@
-<p id="notice"><%= notice %></p>
+<div class="container pt-3 pr-5 pl-5 pb-5">
 
-<p>
-  <strong>Title:</strong>
-  <%= @research.title %>
-</p>
+  <div class="header-font text-center text-break">
+    <%= @research.title %>
+  </div>
+  <%= image_tag @research.main_image, class: "img-fluid" %>
+  <div class="text-center upper underline_border upper_border mt-1 mb-1">
+    <%= @research.created_at.strftime("%B %d, %Y") %>
+  </div>
 
-<%= link_to 'Edit', edit_research_path(@research) %> |
-<%= link_to 'Back', researches_path %>
+  <div class="mt-5 mb-5 reach-text">
+    <%= @research.body_area.to_plain_text %>
+  </div>
+
+  <div class="text-center m-5">
+    <%= link_to 'Back', researches_path, class: 'btn btn-outline-dark btn-lg' %>
+  </div>
+
+  <% if @research.publications.count > 0 %>
+    <div class="upper_border mt-1 mb-1">
+      Publications:
+      <ul>
+        <% @research.publications.each do |p| %>
+          <li><%= p.name %>, <%= p.publisher %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <%= link_to 'Edit', edit_research_path(@research) %>
+</div>
