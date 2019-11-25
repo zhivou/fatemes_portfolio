@@ -6,10 +6,10 @@ class RegistrationsController < Devise::RegistrationsController
 
   def one_user_registered?
     if Admin.count == 1
-      if user_signed_in?
+      if admin_signed_in?
         redirect_to root_path
       else
-        redirect_to new_user_session_path
+        redirect_to new_admin_session_path
       end
     end
   end
