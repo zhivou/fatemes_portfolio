@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="f5f32980-dc6d-4bc7-83f6-145762e73bdf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/researches/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/researches/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/contacts/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/contacts/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/cvs/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/cvs/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/researches/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/researches/show.html.erb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -38,12 +40,12 @@
     </ExecCommand>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/researches/index.html.erb">
+        <entry file="file://$PROJECT_DIR$/app/views/cvs/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" column="50" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
+            <state>
+              <caret column="18" lean-forward="true" selection-start-column="18" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -94,11 +96,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/home_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/about/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/about_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/contacts_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/contacts/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/blogposts/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/actiontext.scss" />
         <option value="$PROJECT_DIR$/app/models/blogpost.rb" />
@@ -130,7 +130,6 @@
         <option value="$PROJECT_DIR$/app/controllers/researches_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/application/_navbar.html.erb" />
         <option value="$PROJECT_DIR$/app/views/application/_navbar_2.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/researches/show.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/researches.scss" />
         <option value="$PROJECT_DIR$/app/controllers/registrations_controller.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.scss" />
@@ -145,6 +144,9 @@
         <option value="$PROJECT_DIR$/app/views/blogposts/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/blogposts/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/researches/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/researches/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/contacts/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/cvs/index.html.erb" />
       </list>
     </option>
   </component>
@@ -190,14 +192,14 @@
               <item name="fatemes_portfolio" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="researches" type="462c0819:PsiDirectoryNode" />
+              <item name="cvs" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="RailsProjectView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -392,18 +394,20 @@
       <workItem from="1574480098417" duration="14561000" />
       <workItem from="1574581028790" duration="9697000" />
       <workItem from="1574697611277" duration="147000" />
-      <workItem from="1574703186863" duration="4212000" />
+      <workItem from="1574703186863" duration="4437000" />
+      <workItem from="1574713337670" duration="13000" />
+      <workItem from="1574723622831" duration="921000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98573000" />
+    <option name="totallyTimeSpent" value="99732000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2560" height="1381" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15170771" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11477363" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -413,10 +417,10 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" sideWeight="0.7161874" weight="0.22727273" />
+      <window_info anchor="bottom" id="Docker" order="7" sideWeight="0.7161874" visible="true" weight="0.26555023" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32938856" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.6107561" visible="true" weight="0.1969697" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.6107561" weight="0.17224881" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.28381255" side_tool="true" weight="0.28698224" />
       <window_info anchor="bottom" id="TypeScript" order="12" />
       <window_info anchor="bottom" id="Messages" order="13" />
@@ -434,13 +438,6 @@
     <SUITE FILE_PATH="coverage/fatemes_portfolio@Development__fatemes_portfolio.rcov" NAME="Development: fatemes_portfolio Coverage Results" MODIFIED="1573713794600" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="fatemes_portfolio" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/blogposts/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/researches/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -464,13 +461,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/images/project.jpg">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/contacts/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="22" selection-start-column="22" selection-end-column="41" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/research.rb">
       <provider selected="true" editor-type-id="text-editor">
@@ -739,17 +729,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/researches/show.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/researches/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="33" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="33" />
+        <state>
+          <caret selection-end-line="3" selection-end-column="75" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/researches/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/contacts/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="50" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
+        <state>
+          <caret selection-end-line="2" selection-end-column="144" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/researches/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="2" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/cvs/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="18" lean-forward="true" selection-start-column="18" selection-end-column="28" />
         </state>
       </provider>
     </entry>
