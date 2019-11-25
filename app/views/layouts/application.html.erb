@@ -13,10 +13,15 @@
   </head>
 
   <body data-turbolinks="false">
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
-
   <%= render 'application/navbar_2' %>
+
+  <% if notice || alert %>
+  <div>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+  </div>
+  <% end %>
+
   <%= yield %>
   <div class="text-center">
     © <%= Date.today.strftime("%Y")%> Fateme Esmailie All Rights Reserved

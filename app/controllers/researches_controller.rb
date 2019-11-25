@@ -1,4 +1,6 @@
 class ResearchesController < ApplicationController
+
+  before_action :authenticate_admin!, only: [:new, :edit, :update, :destroy, :create]
   before_action :set_research, only: [:show, :edit, :update, :destroy]
 
   # GET /researches
