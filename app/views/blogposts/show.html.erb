@@ -29,6 +29,6 @@
 
   </div>
 
-  <%= link_to 'Edit', edit_blogpost_path(@blogpost) %> |
+  <%= link_to 'Edit |', edit_blogpost_path(@blogpost) if admin_signed_in?%>
   <%= link_to 'Back', blogposts_path %>
 </div>

@@ -8,9 +8,10 @@
   </div>
 
       <% @researches.each do |research| %>
-      <div class="mt-3 mb-3">
+      <div class="mt-5 mb-5">
+        <a href="/researches/<%= research.id %>" class="no-decoration">
         <div class="row">
-          <div class="col-3">
+          <div class="col-3 d-flex align-items-center justify-content-center">
             <%= image_tag research.main_image.variant(combine_options: { resize: '^240', resize_to_fill: [240, 240] }), class: "img-fluid" %>
           </div>
           <div class="col-9">
@@ -33,18 +34,21 @@
             </button>
             </div>
 
-            <div class="actions text-center p-3">
-              <%= link_to 'Show', research %></td>
-              <%= link_to 'Edit', edit_research_path(research) %></td>
-              <%= link_to 'Destroy', research, method: :delete, data: { confirm: 'Are you sure?' } %>
-            </div>
+            <% if admin_signed_in? %>
+              <div class="actions text-center p-3">
+                <%= link_to 'Show', research %></td>
+                <%= link_to 'Edit', edit_research_path(research) %></td>
+                <%= link_to 'Destroy', research, method: :delete, data: { confirm: 'Are you sure?' } %>
+              </div>
+            <% end %>
           </div>
         </div>
+        </a>
       </div>
       <% end %>
   <%= paginate @researches %>
 </div>
 <div class="container">
-  <%= link_to 'New Research', new_research_path %>
+  <%= link_to 'New Research', new_research_path if admin_signed_in?%>
 </div>
 

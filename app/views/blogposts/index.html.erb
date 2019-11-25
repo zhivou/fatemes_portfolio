@@ -69,7 +69,5 @@
   </div>
 
   <%= paginate @blogposts %>
-  <%= link_to 'New Blogpost', new_blogpost_path %>
-  <br>
-  <a href="">All right reserved <%= Date.today.strftime("%Y") %></a>
+  <%= link_to 'New Blogpost', new_blogpost_path if admin_signed_in?%>
 </div>

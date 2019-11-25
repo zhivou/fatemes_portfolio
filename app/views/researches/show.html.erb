@@ -26,5 +26,5 @@
       </ul>
     </div>
   <% end %>
-  <%= link_to 'Edit', edit_research_path(@research) %>
+  <%= link_to 'Edit', edit_research_path(@research) if admin_signed_in?%>
 </div>
