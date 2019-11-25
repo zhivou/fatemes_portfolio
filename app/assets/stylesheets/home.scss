@@ -1,0 +1,20 @@
+.sliderWrapper {
+  background-position: center center;
+  transition: background-image 0.3s ease-in-out;
+  height: 100%;
+  display: block;
+  position: relative;
+  min-height: 99vh;
+  overflow-x: hidden;
+  background-size: cover;
+  z-index: -1;
+}
+
+.blue {
+  color: #0079B1;
+}
+
+slogan {
+  background-color: #333333 !important;
+  z-index: 10;
+}
