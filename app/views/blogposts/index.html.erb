@@ -1,4 +1,12 @@
 <%= stylesheet_link_tag "blogposts" %>
+<% @page_title = "Blogposts | Fateme Esmailie" %>
+<% @seo_keywords += "Blog, News, Mechanical Engineering, Heat Transfer, " %>
+<% for blogpost in 0..15 do %>
+  <% unless @blogposts[blogpost].nil? %>
+    <% @seo_keywords += @blogposts[blogpost].title + ", " %>
+  <% end %>
+<% end %>
+<% @seo_description = "My latest blogs where I share something interesting about Mechanical Engineering" %>
 
 <div class="newspaper pt-3 pr-5 pl-5 pb-5">
   <div class="text-center text-break">

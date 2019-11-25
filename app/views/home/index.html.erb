@@ -1,3 +1,8 @@
+<%= stylesheet_link_tag "home" %>
+<% @page_title = "Home | Fateme Esmailie" %>
+<% @seo_keywords += "BIO, About Me, Welcome" %>
+<% @seo_description = "Here is my bio page where you can know about me and what I have accomplished during my research time and beyond" %>
+
 <div class="row container-fluid">
   <div class="col-8 no_padding">
     <div class="d-flex text-center sliderWrapper parallax-window full-height" data-parallax="scroll" data-image-src="<%= asset_path "fateme_logo.jpg" %>">
@@ -15,31 +20,3 @@
     </div>
   </div>
 </div>
-
-<style>
-  .sliderWrapper {
-    background-position: center center;
-    transition: background-image 0.3s ease-in-out;
-    height: 100%;
-    display: block;
-    position: relative;
-    min-height: 99vh;
-    overflow-x: hidden;
-    background-size: cover;
-    z-index: -1;
-  }
-
-  #main-image {
-    background-image: url("<%= asset_path "background.png" %>");
-  }
-
-  .blue {
-    color: #0079B1;
-  }
-
-  slogan {
-    background-color: #333333 !important;
-    z-index: 10;
-  }
-
-</style>
