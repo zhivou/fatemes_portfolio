@@ -8,6 +8,7 @@
 
 body {
   font-family: 'Roboto Slab', serif;
+  min-height: 100vh;
 }
 
 .underline_border {
@@ -74,4 +75,9 @@ a:hover {
 .active > a {
   color: white !important;
   background-color: #333333 !important;
+}
+
+.no-decoration{
+  text-decoration: none !important;
+  color: #333333 !important;
 }

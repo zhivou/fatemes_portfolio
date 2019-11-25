@@ -7,6 +7,12 @@
     <%= link_to "Service", services_path, class: "py-2 d-none d-md-inline-block upper" %>
     <%= link_to "Blogs", blogposts_path, class: "py-2 d-none d-md-inline-block upper" %>
     <a class="py-2 d-none d-md-inline-block upper" href="/contacts">Contact Me</a>
+    <% if admin_signed_in? %>
+      <%= link_to "Logout", destroy_admin_session_path, method: :delete, class: "py-2 d-none d-md-inline-block upper" %>
+    <% else %>
+      <%= link_to "Login", new_admin_session_path, class: "py-2 d-none d-md-inline-block upper" %>
+      <%= link_to "Register", new_admin_registration_path, class: "py-2 d-none d-md-inline-block upper" if Admin.count == 0%>
+    <% end %>
   </div>
 </nav>
 
