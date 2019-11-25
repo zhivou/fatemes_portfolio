@@ -1,5 +1,9 @@
 <%= stylesheet_link_tag "blogposts_show" %>
 <%= stylesheet_link_tag "blogposts" %>
+<% @page_title = @blogpost.title + " | Fateme Esmailie" %>
+<% @seo_keywords += "Blog, News, Mechanical Engineering, Heat Transfer, " %>
+<% @seo_keywords += @blogpost.title %>
+<% @seo_description = "My latest blogs where I share something interesting about Mechanical Engineering" %>
 
 <div class="newspaper pt-3 pr-5 pl-5 pb-5">
   <div class="row container-fluid">
