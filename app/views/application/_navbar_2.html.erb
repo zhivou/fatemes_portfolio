@@ -1,17 +1,17 @@
 <nav class="site-header sticky-top py-1">
-  <div class="container col-8 d-flex flex-column flex-md-row justify-content-between">
-    <a class="p-2 d-none d-md-inline-block upper" href="/">Home</a>
-    <%= link_to "CV", cvs_path, class: "py-2 d-none d-md-inline-block upper" %>
-    <%= link_to "Teaching", teachings_path, class: "py-2 d-none d-md-inline-block upper" %>
-    <%= link_to "Research", researches_path, class: "py-2 d-none d-md-inline-block upper" %>
-    <%= link_to "Service", services_path, class: "py-2 d-none d-md-inline-block upper" %>
-    <%= link_to "Blogs", blogposts_path, class: "py-2 d-none d-md-inline-block upper" %>
-    <a class="py-2 d-none d-md-inline-block upper" href="/contacts">Contact Me</a>
+  <div class="container col-8 d-flex flex-column flex-md-row justify-content-between nav-link">
+    <a class="p-2 d-none d-md-inline-block upper nav-link <%= 'active' if params[:controller] == 'home' %>" href="/">Home</a>
+    <%= link_to "CV", cvs_path, class: "py-2 d-none d-md-inline-block upper nav-link #{'active' if params[:controller] == 'cvs'}" %>
+    <%= link_to "Teaching", teachings_path, class: "py-2 d-none d-md-inline-block upper nav-link #{'active' if params[:controller] == 'teachings'}" %>
+    <%= link_to "Research", researches_path, class: "py-2 d-none d-md-inline-block upper nav-link #{'active' if params[:controller] == 'researches'}" %>
+    <%= link_to "Service", services_path, class: "py-2 d-none d-md-inline-block upper nav-link #{'active' if params[:controller] == 'services'}" %>
+    <%= link_to "Blogs", blogposts_path, class: "py-2 d-none d-md-inline-block upper nav-link #{'active' if params[:controller] == 'blogposts'}" %>
+    <a class="py-2 d-none d-md-inline-block upper nav-link <%= 'active' if params[:controller] == 'contacts' %>" href="/contacts">Contact</a>
     <% if admin_signed_in? %>
-      <%= link_to "Logout", destroy_admin_session_path, method: :delete, class: "py-2 d-none d-md-inline-block upper" %>
+      <%= link_to "Logout", destroy_admin_session_path, method: :delete, class: "py-2 d-none d-md-inline-block upper nav-link " %>
     <% else %>
-      <%= link_to "Login", new_admin_session_path, class: "py-2 d-none d-md-inline-block upper" %>
-      <%= link_to "Register", new_admin_registration_path, class: "py-2 d-none d-md-inline-block upper" if Admin.count == 0%>
+      <%= link_to "Login", new_admin_session_path, class: "py-2 d-none d-md-inline-block upper nav-link" %>
+      <%= link_to "Register", new_admin_registration_path, class: "py-2 d-none d-md-inline-block upper nav-link" if Admin.count == 0%>
     <% end %>
   </div>
 </nav>
@@ -29,5 +29,9 @@
 
   a:hover {
     color: #0099EA;
+  }
+
+  .active {
+    color: #0079B1;
   }
 </style>
