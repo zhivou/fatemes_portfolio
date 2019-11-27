@@ -11,6 +11,16 @@ module DefaultPageContent
     @seo_description = ""
   end
 
+  def update_locales(key, value, section=nil)
+    data = YAML.load_file "config/locales/en.yml"
+    if section
+      data['en'][section][key] = value
+    else
+      data[key] = value
+    end
+    File.open("config/locales/en.yml", 'w') { |f| YAML.dump(data, f) }
+  end
+
   private
   #
   # Add more blow:

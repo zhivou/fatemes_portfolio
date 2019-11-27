@@ -1,35 +1,38 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   'true': 'foo'
-#
-# To learn more, please read the Rails Internationalization guide
-# available at https://guides.rubyonrails.org/i18n.html.
-
+---
 en:
   home_page:
     name: FATEME ESMAILIE
-
+    about: Omnis quasi modi corrupti qui ea quisquam quidem itaque vitae eos nam repellendus
+      exercitationem inventore ut consectetur molestias est praesentium temporibus
+      aliquid debitis laborum necessitatibus rerum eligendi atque sit eaque soluta
+      incidunt ipsum eum dolores velit quaerat tenetur corporis praesentium rerum
+      amet deserunt unde sint illum eveniet id est et quia ratione atque aperiam animi
+      sed sit voluptatem blanditiis repellat est nisi nihil et quia consequatur voluptas
+      id magni consectetur fugiat porro non at consequatur omnis recusandae sed sequi
+      at natus nisi corporis officia sit omnis accusantium qui fugit quo excepturi
+      quaerat voluptas et veniam neque occaecati reprehenderit et laudantium hic aperiam
+      a ut in fugit quis alias dicta unde quis libero blanditiis vero laborum ea nobis
+      dolor ut voluptatem quia quisquam minima necessitatibus est ad quibusdam repudiandae
+      minus voluptatem culpa rerum ut omnis omnis sint iusto eos autem perspiciatis
+      ullam error id qui pariatur ipsum iste minima voluptatem doloremque officiis
+      eum architecto quidem rerum inventore ab error eum perferendis expedita in asperiores
+      facilis fuga totam quia minus soluta quas labore illum itaque sapiente consequatur
+      omnis doloribus aut deleniti reiciendis ut aspernatur ut molestiae et ducimus
+      et ullam saepe neque consequatur asperiores iure eveniet rem rerum aut veniam
+      sed accusantium maiores magni aliquid placeat quis mollitia et quo alias similique
+      distinctio quam illo nihil sed quae sequi nihil sed molestiae quo eos qui est
+      est et sint qui tempore nihil voluptas consequatur dolores et laudantium qui
+      explicabo beatae quos quis sapiente optio voluptatem quia tempora aliquam commodi
+      veritatis rem sunt aut illo dolorum voluptatem modi non qui cum molestias sunt
+      et aut facilis impedit perferendis dolore velit est assumenda suscipit ut vitae
+      distinctio sed et dignissimos nemo et provident et non occaecati autem magnam
+      cupiditate ut nobis animi accusamus quia explicabo nostrum sit beatae voluptatibus
+      aut voluptate earum voluptas aut sit et dolor ipsam maxime laboriosam impedit
+      dolores expedita voluptates ad et vero similique libero possimus quia cupiditate
+      ut totam enim non nam provident pariatur quae eius eum delectus amet ratione
+      in aut aut odit ipsam optio aut sunt aut dolor rerum repellendus aut eaque et
+      natus tenetur voluptate non iste molestiae voluptatum laboriosam vel placeat
+      velit hic architecto dignissimos voluptatibus suscipit veritatis fuga debitis
+      velit aliquam nostrum officia repellat enim sint odio ea iure quas quia voluptatum
+      et tempora cumque voluptas adipisci dolorem nesciunt doloremque possimus dicta
+      autem sunt ea cum qui exercitationem commodi odit et voluptatem accusamus consequuntur.
