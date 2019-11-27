@@ -1,3 +1,5 @@
+<%= Gon::Base.render_data %>
+
 <% @page_title = "Research Projects | Fateme Esmailie" %>
 <% @seo_keywords += "Research, Projects" %>
 <%# @researches.each { |r| @seo_keywords += (", " + r.title) } %>
@@ -27,8 +29,8 @@
   }
 
   $( document ).ready(function() {
-    featureToggle();
     $('#projects').LoadingOverlay("show");
+    featureToggle();
   });
 
   function featureToggle() {

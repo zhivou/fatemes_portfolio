@@ -21,7 +21,7 @@ class ResearchesController < ApplicationController
 
   def projects
     @researches = Research.order(id: :desc)
-    gon.main_images = "aasd"
+    gon.mainImages = "aasd"
     render json: @researches, include: ['publications', 'body_area', 'main_image']
   end
 
