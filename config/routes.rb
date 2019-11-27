@@ -12,4 +12,6 @@ Rails.application.routes.draw do
   resources :services, only: [:index]
   resources :cvs, only: [:index]
   resources :teachings, only: [:index]
+
+  get 'admin_panel', to: "admin_panel#index"
 end
