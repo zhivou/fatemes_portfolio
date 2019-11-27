@@ -14,4 +14,5 @@ Rails.application.routes.draw do
   resources :teachings, only: [:index]
 
   get 'admin_panel', to: "admin_panel#index"
+  post 'admin_panel/update_home_page', to: "admin_panel#update_home_page"
 end

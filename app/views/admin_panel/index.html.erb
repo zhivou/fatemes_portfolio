@@ -18,7 +18,7 @@
       <label for="seoDescriptionInput">SEO Description</label>
       <textarea class="form-control" id="seoDescriptionInput" rows="3"><%= t(:home_page)[:seo_description] %></textarea>
 
-      <input type="submit">
+      <input type="submit" class="btn btn-warning mt-3">
     </div>
   </form>
 
@@ -56,14 +56,14 @@
     event.preventDefault();
     let homePageInputs = {};
     homePageInputs.name = $("#nameInput").val();
-    homePageInputs.bio = $("#bioInput").val();
-    homePageInputs.seo = $("#seoKeywordInput").val();
-    homePageInputs.seoDescription = $("#seoDescriptionInput").val();
+    homePageInputs.about = $("#bioInput").val();
+    homePageInputs.seo_keywords = $("#seoKeywordInput").val();
+    homePageInputs.seo_description = $("#seoDescriptionInput").val();
     sendFormHandler(homePageInputs);
   });
 
   function sendFormHandler(inputs) {
-    let base_url = '<%= root_url %>admin_panel/update_localization';
+    let base_url = '<%= root_url %>admin_panel/update_home_page';
 
     $.ajax({
       url: base_url,
@@ -74,10 +74,10 @@
       data: JSON.stringify(inputs),
       processData: false,
       success: function (data, textStatus, jQxhr) {
-        console.log(data)
+        $.notify("Home Page Updated!", "success");
       },
-      error: function (jqXhr, textStatus, errorThrown) {
-        console.log(errorThrown);
+      error: function (xhr, textStatus, errorThrown) {
+        $.notify(xhr.responseJSON.message, "warn");
       }
     })
   }

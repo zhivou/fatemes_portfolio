@@ -36,10 +36,18 @@ en:
       velit aliquam nostrum officia repellat enim sint odio ea iure quas quia voluptatum
       et tempora cumque voluptas adipisci dolorem nesciunt doloremque possimus dicta
       autem sunt ea cum qui exercitationem commodi odit et voluptatem accusamus consequuntur.
-    seo_keywords: BIO, About Me, Welcome
-    seo_description: Here is my bio page where you can know about me and what I have accomplished during my research time and beyond
+    seo_keywords: BIO, About Me, Welcome, Something Else
+    seo_description: Here is my bio page where you can know about me and what I have
+      accomplished during my research time and beyond
   research_page:
     title: My Projects
-    about: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    about: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+      when an unknown printer took a galley of type and scrambled it to make a type
+      specimen book. It has survived not only five centuries, but also the leap into
+      electronic typesetting, remaining essentially unchanged. It was popularised
+      in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+      and more recently with desktop publishing software like Aldus PageMaker including
+      versions of Lorem Ipsum.
     seo_keywords: Research, Projects
     seo_description: My latest Research Projects and its explanation.
