@@ -1,0 +1,45 @@
+<% @researches.each do |research| %>
+  <div class="mt-5">
+    <a href="/researches/<%= research.id %>" class="no-decoration">
+      <div class="row">
+
+        <div class="col-3 d-flex align-items-center justify-content-center">
+          <%= image_tag research.main_image.variant(combine_options: { resize: '^240', resize_to_fill: [240, 240] }), class: "img-fluid" %>
+        </div>
+
+        <div class="col-9">
+
+          <div class="text-center upper underline_border upper_border mt-1 mb-1">
+            <%= research.title %>
+          </div>
+
+          <div>
+            <%= research.body_area.to_plain_text.first(500) %>...
+          </div>
+
+          <div class="mt-1 mb-1">
+                <span class="btn btn-secondary">
+                  Publications <span class="badge badge-light"><%= research.publications.count %></span>
+                  <span class="sr-only">unread messages</span>
+                </span>
+
+            <button type="button" class="btn btn-success">
+              Words <span class="badge badge-light"><%= research.body_area.to_plain_text.split.size %></span>
+              <span class="sr-only">unread messages</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </a>
+  </div>
+  <% if admin_signed_in? %>
+    <div class="actions text-right p-3">
+      <%= link_to 'Show', research %>
+      <%= link_to 'Edit', edit_research_path(research) %>
+      <%= link_to 'Destroy', research, method: :delete, data: { confirm: 'Are you sure?' } %>
+    </div>
+  <% end %>
+<% end %>
+
+<%= paginate @researches, :remote => true %>

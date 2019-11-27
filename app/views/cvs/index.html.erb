@@ -3,3 +3,39 @@
 <% @seo_description = "" %>
 
 CV Page
+
+<div id="container"></div>
+<button id="showData">Add Data</button>
+
+<script src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.6/dist/loadingoverlay.min.js"></script>
+
+
+<script type="text/javascript" charset="utf-8">
+
+  function prepareCSRFToken() {
+    return {'X-CSRF-Token': $('meta[name="csrf-token"]').attr('content')}
+  }
+
+  $( "#showData" ).click(function() {
+    featureToggle();
+    $.LoadingOverlay("show");
+  });
+
+  function featureToggle() {
+    var root_path = '<%= researches_url %>';
+    $.ajax({
+      url: root_path,
+      method: 'GET',
+      headers: prepareCSRFToken(),
+      success: function(response) {
+        $.LoadingOverlay("hide");
+        $('#container').html(response);
+      },
+      error: function(xhr) {
+        $.LoadingOverlay("hide");
+        alert(xhr.statusText);
+      }
+    });
+  }
+
+</script>

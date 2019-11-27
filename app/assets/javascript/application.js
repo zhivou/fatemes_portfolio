@@ -14,6 +14,6 @@
 //= require jquery-ui
 //= require bootstrap
 //= require activestorage
-//= require turbolinks
 //= require parallax.min
 //= require cocoon
+//= require turbolinks

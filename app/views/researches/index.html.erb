@@ -1,6 +1,6 @@
 <% @page_title = "Research Projects | Fateme Esmailie" %>
 <% @seo_keywords += "Research, Projects" %>
-<% @researches.each { |r| @seo_keywords += (", " + r.title) } %>
+<%# @researches.each { |r| @seo_keywords += (", " + r.title) } %>
 <% @seo_description = "My latest Research Projects and its explanation." %>
 
 <div class="container pt-3 pr-5 pl-5 pb-5">
@@ -12,52 +12,45 @@
     <%= image_tag 'project.jpg', class: "img-fluid", style: "" %>
   </div>
 
-      <% @researches.each do |research| %>
-      <div class="mt-5">
-        <a href="/researches/<%= research.id %>" class="no-decoration">
-          <div class="row">
-
-            <div class="col-3 d-flex align-items-center justify-content-center">
-              <%= image_tag research.main_image.variant(combine_options: { resize: '^240', resize_to_fill: [240, 240] }), class: "img-fluid" %>
-            </div>
-
-            <div class="col-9">
-
-              <div class="text-center upper underline_border upper_border mt-1 mb-1">
-                <%= research.title %>
-              </div>
-
-              <div>
-                <%= research.body_area.to_plain_text.first(500) %>...
-              </div>
-
-              <div class="mt-1 mb-1">
-                <span class="btn btn-secondary">
-                  Publications <span class="badge badge-light"><%= research.publications.count %></span>
-                  <span class="sr-only">unread messages</span>
-                </span>
-
-                <button type="button" class="btn btn-success">
-                  Words <span class="badge badge-light"><%= research.body_area.to_plain_text.split.size %></span>
-                  <span class="sr-only">unread messages</span>
-                </button>
-              </div>
-            </div>
-
-          </div>
-        </a>
-      </div>
-      <% if admin_signed_in? %>
-        <div class="actions text-right p-3">
-          <%= link_to 'Show', research %>
-          <%= link_to 'Edit', edit_research_path(research) %>
-          <%= link_to 'Destroy', research, method: :delete, data: { confirm: 'Are you sure?' } %>
-        </div>
-      <% end %>
-      <% end %>
-  <%= paginate @researches %>
+  <div id="projects" style="min-height: 200px"></div>
 </div>
 <div class="container">
   <%= link_to 'New Research', new_research_path if admin_signed_in?%>
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.6/dist/loadingoverlay.min.js"></script>
+
+<script type="text/javascript" charset="utf-8">
+
+  function prepareCSRFToken() {
+    return {'X-CSRF-Token': $('meta[name="csrf-token"]').attr('content')}
+  }
+
+  $( document ).ready(function() {
+    featureToggle();
+    $('#projects').LoadingOverlay("show");
+  });
+
+  function featureToggle() {
+    var root_path = '<%= projects_all_url %>';
+    $.ajax({
+      url: root_path,
+      method: 'GET',
+      headers: prepareCSRFToken(),
+      success: function(response) {
+        $('#projects').LoadingOverlay("hide");
+        render_projects(response);
+        // $('#projects').html(response);
+      },
+      error: function(xhr) {
+        $('#projects').LoadingOverlay("hide");
+        alert(xhr.statusText);
+      }
+    });
+  }
+
+  function render_projects(projects) {
+    console.log(projects)
+  }
+
+</script>

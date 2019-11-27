@@ -5,15 +5,11 @@ class ResearchesController < ApplicationController
 
   # GET /researches
   # GET /researches.json
-  def index
-    @researches = Research.order(id: :desc).page(params[:page]).per(10)
-
-  end
+  def index; end
 
   # GET /researches/1
   # GET /researches/1.json
-  def show
-  end
+  def show; end
 
   # GET /researches/new
   def new
@@ -21,7 +17,12 @@ class ResearchesController < ApplicationController
   end
 
   # GET /researches/1/edit
-  def edit
+  def edit; end
+
+  def projects
+    @researches = Research.order(id: :desc)
+    gon.main_images = "aasd"
+    render json: @researches, include: ['publications', 'body_area', 'main_image']
   end
 
   # POST /researches
@@ -66,17 +67,18 @@ class ResearchesController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_research
-      @research = Research.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_research
+    @research = Research.find(params[:id])
+  end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def research_params
-      params.require(:research).permit(
-        :title,
-        :main_image,
-        :body_area,
-        publications_attributes: [:id, :name, :publisher, :_destroy])
-    end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def research_params
+    params.require(:research).permit(
+      :title,
+      :main_image,
+      :body_area,
+      publications_attributes: %i[id name publisher _destroy]
+    )
+  end
 end
