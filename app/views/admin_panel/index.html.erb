@@ -4,37 +4,81 @@
   <hr>
   <h3>Home Page</h3>
 
-  <div class="form-group home_page mt-3">
-    <label for="nameInput">Header Name</label>
-    <input type="email" class="form-control" id="nameInput" aria-describedby="emailHelp" value="<%= t(:home_page)[:name] %>">
+  <form id="homePageForm">
+    <div class="form-group home_page mt-3">
+      <label for="nameInput">Header Name</label>
+      <input type="text" class="form-control" id="nameInput" aria-describedby="emailHelp" value="<%= t(:home_page)[:name] %>">
 
-    <label for="bioInput">Bio</label>
-    <textarea class="form-control" id="bioInput" rows="5"><%= t(:home_page)[:about] %></textarea>
+      <label for="bioInput">Bio</label>
+      <textarea class="form-control" id="bioInput" rows="5"><%= t(:home_page)[:about] %></textarea>
 
-    <label for="seoKeywordInput">SEO Keywords</label>
-    <input type="email" class="form-control" id="seoKeywordInput" aria-describedby="emailHelp" value="<%= t(:home_page)[:seo_keywords] %>">
+      <label for="seoKeywordInput">SEO Keywords</label>
+      <input type="text" class="form-control" id="seoKeywordInput" aria-describedby="emailHelp" value="<%= t(:home_page)[:seo_keywords] %>">
 
-    <label for="seoDescriptionInput">SEO Description</label>
-    <textarea class="form-control" id="seoDescriptionInput" rows="3"><%= t(:home_page)[:seo_description] %></textarea>
-  </div>
+      <label for="seoDescriptionInput">SEO Description</label>
+      <textarea class="form-control" id="seoDescriptionInput" rows="3"><%= t(:home_page)[:seo_description] %></textarea>
+
+      <input type="submit">
+    </div>
+  </form>
 
   <hr>
   <h3>Research Page</h3>
   <div class="form-group research_page mt-3">
     <label for="researchTitleInput">Title</label>
-    <input type="email" class="form-control" id="researchTitleInput" aria-describedby="emailHelp" value="<%= t(:research_page)[:title] %>">
+    <input type="text" class="form-control" id="researchTitleInput" aria-describedby="emailHelp" value="<%= t(:research_page)[:title] %>">
 
     <label for="researchAboutInput">About</label>
     <textarea class="form-control" id="researchAboutInput" rows="5"><%= t(:research_page)[:about] %></textarea>
 
     <label for="researchSeoKeywordInput">SEO Keywords</label>
-    <input type="email" class="form-control" id="researchSeoKeywordInput" aria-describedby="emailHelp" value="<%= t(:research_page)[:seo_keywords] %>">
+    <input type="text" class="form-control" id="researchSeoKeywordInput" aria-describedby="emailHelp" value="<%= t(:research_page)[:seo_keywords] %>">
 
     <label for="researchSeoDescriptionInput">SEO Description</label>
     <textarea class="form-control" id="researchSeoDescriptionInput" rows="3"><%= t(:research_page)[:seo_description] %></textarea>
+
+    <button type="button" class="btn btn-warning mt-3">Save</button>
   </div>
 </div>
 
 <script type="text/javascript" charset="utf-8">
 
+  function prepareCSRFToken() {
+    return {'X-CSRF-Token': $('meta[name="csrf-token"]').attr('content')}
+  }
+
+  $( document ).ready(function() {
+    console.log( "ready!" );
+  });
+
+
+  $( "#homePageForm" ).submit(function( event ) {
+    event.preventDefault();
+    let homePageInputs = {};
+    homePageInputs.name = $("#nameInput").val();
+    homePageInputs.bio = $("#bioInput").val();
+    homePageInputs.seo = $("#seoKeywordInput").val();
+    homePageInputs.seoDescription = $("#seoDescriptionInput").val();
+    sendFormHandler(homePageInputs);
+  });
+
+  function sendFormHandler(inputs) {
+    let base_url = '<%= root_url %>admin_panel/update_localization';
+
+    $.ajax({
+      url: base_url,
+      dataType: 'json',
+      type: 'post',
+      contentType: 'application/json',
+      headers: prepareCSRFToken(),
+      data: JSON.stringify(inputs),
+      processData: false,
+      success: function (data, textStatus, jQxhr) {
+        console.log(data)
+      },
+      error: function (jqXhr, textStatus, errorThrown) {
+        console.log(errorThrown);
+      }
+    })
+  }
 </script>
