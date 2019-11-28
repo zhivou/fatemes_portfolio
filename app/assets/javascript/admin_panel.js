@@ -24,6 +24,16 @@ $( document ).ready(function() {
     sendFormHandler(researchPageInputs, 'update_research_page');
   });
 
+  $( "#contactPageForm" ).submit(function( event ) {
+    event.preventDefault();
+    let contactPageInputs = {};
+    contactPageInputs.title = $("#contactTitleInput").val();
+    contactPageInputs.about = $("#contactAboutInput").val();
+    contactPageInputs.seo_keywords = $("#contactSeoKeywordInput").val();
+    contactPageInputs.seo_description = $("#contactSeoDescriptionInput").val();
+    sendFormHandler(contactPageInputs, 'update_contact_page');
+  });
+
   function sendFormHandler(inputs, apiPoint) {
     let base_url = gon.base_url;
 

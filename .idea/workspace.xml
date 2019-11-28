@@ -4,9 +4,9 @@
     <list default="true" id="f5f32980-dc6d-4bc7-83f6-145762e73bdf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/assets/javascript/admin_panel.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/javascript/admin_panel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/admin_panel_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin_panel_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/admin_panel/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin_panel/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/contacts/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/contacts/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/locales/en.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/locales/en.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -257,7 +257,7 @@
       <workItem from="1574891803649" duration="167000" />
       <workItem from="1574892180804" duration="3355000" />
       <workItem from="1574896511238" duration="51000" />
-      <workItem from="1574896594021" duration="6188000" />
+      <workItem from="1574896594021" duration="7973000" />
     </task>
     <servers />
   </component>
