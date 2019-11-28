@@ -1,15 +1,19 @@
 <% @page_title = "Research Projects | Fateme Esmailie" %>
-<% @seo_keywords += "Research, Projects" %>
+<% @seo_keywords += t(:research_page)[:seo_keywords] %>
 <% @researches.each { |r| @seo_keywords += (", " + r.title) } %>
-<% @seo_description = "My latest Research Projects and its explanation." %>
+<% @seo_description = t(:research_page)[:seo_description] %>
 
 <div class="container pt-3 pr-5 pl-5 pb-5">
   <div class="header-font text-center text-break">
-    My Projects
+    <%= t(:research_page)[:title] %>
   </div>
 
   <div>
     <%= image_tag 'project.jpg', class: "img-fluid", style: "" %>
+  </div>
+
+  <div class="p-3 mt-3">
+    <h3><%= t(:research_page)[:about] %></h3>
   </div>
 
       <% @researches.each do |research| %>

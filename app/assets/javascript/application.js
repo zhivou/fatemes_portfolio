@@ -17,3 +17,4 @@
 //= require turbolinks
 //= require parallax.min
 //= require cocoon
+//= require notify.min

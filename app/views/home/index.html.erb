@@ -1,7 +1,7 @@
 <%= stylesheet_link_tag "home" %>
 <% @page_title = "Home | Fateme Esmailie" %>
-<% @seo_keywords += "BIO, About Me, Welcome" %>
-<% @seo_description = "Here is my bio page where you can know about me and what I have accomplished during my research time and beyond" %>
+<% @seo_keywords += t(:home_page)[:seo_keywords] %>
+<% @seo_description = t(:home_page)[:seo_description] %>
 
 <div class="row container-fluid">
   <div class="col-8 no_padding">
@@ -13,10 +13,10 @@
       <span class="blue">HI</span>, I am
     </div>
     <div class="display-1 underline_border">
-      <span>FATEME ESMAILIE</span>
+      <span><%= t(:home_page)[:name] %></span>
     </div>
     <div class="p-3">
-      <%= Faker::Lorem.sentence(word_count: 400) %>
+      <%= t(:home_page)[:about] %>
     </div>
   </div>
 </div>

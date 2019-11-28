@@ -1,16 +1,16 @@
 <% @page_title = "Contact Me | Fateme Esmailie" %>
-<% @seo_keywords += "Contact, Contact Me, Sent me Email, Questions, Social Media" %>
-<% @seo_description = "If you want to sent me an email with any questions please use following form. I will be happy to answer any questions" %>
+<% @seo_keywords += t(:contact_page)[:seo_keywords] %>
+<% @seo_description = t(:contact_page)[:seo_description] %>
 
 <div class="newspaper pt-3 pr-5 pl-5 pb-5">
   <div class="bg-white">
     <div class="row text-center">
       <div class="col-sm-12 col-lg-12 header-font">
-        Contact Me
+        <%= t(:contact_page)[:title] %>
       </div>
     </div>
     <div class="container text-center upper_border underline_border pt-3 pb-3 pl-5 pr-5">
-      Please feel free to contact me by using form below:
+      <%= t(:contact_page)[:about] %>
     </div>
   </div>
   <div class="container mt-5">
