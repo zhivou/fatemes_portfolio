@@ -1,6 +1,6 @@
 class AdminPanelController < ApplicationController
 
-  before_action :authenticate_admin!, only: [:update_localization]
+  before_action :authenticate_admin!
 
   def index; end
 

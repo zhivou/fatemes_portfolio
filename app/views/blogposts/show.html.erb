@@ -19,9 +19,9 @@
       </div>
     </div>
 
-    <div class="col-4 text-center stick-me">
+    <div class="col-4 text-center stick-me pt-5">
       <div class="header-font-show p-5"><%= @blogpost.title %></div>
-      <button class="btn btn-outline-dark">Back</button>
+      <%= link_to 'Back', blogposts_path, class: "btn btn-outline-dark" %>
     </div>
 
     <div class="col-8">
