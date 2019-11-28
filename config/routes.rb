@@ -15,4 +15,5 @@ Rails.application.routes.draw do
 
   get 'admin_panel', to: "admin_panel#index"
   post 'admin_panel/update_home_page', to: "admin_panel#update_home_page"
+  post 'admin_panel/update_research_page', to: "admin_panel#update_research_page"
 end

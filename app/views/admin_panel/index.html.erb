@@ -5,7 +5,7 @@
   <small id="emailHelp" class="form-text text-muted">Update site sections respectively. By changing this you will update site pages text.</small>
   <hr>
 
-  <button class="btn btn-primary btn-block" type="button" data-toggle="collapse" data-target="#collapseHome" aria-expanded="false" aria-controls="collapseHome">
+  <button class="btn btn-primary btn-block mt-3" type="button" data-toggle="collapse" data-target="#collapseHome" aria-expanded="false" aria-controls="collapseHome">
     Home Page
   </button>
   <div class="collapse p-3" id="collapseHome">
@@ -32,23 +32,34 @@
   </div>
 
 
-  <hr>
-  <h3>Research Page</h3>
-  <div class="form-group research_page mt-3">
-    <label for="researchTitleInput">Title</label>
-    <input type="text" class="form-control" id="researchTitleInput" aria-describedby="emailHelp" value="<%= t(:research_page)[:title] %>">
+  <button class="btn btn-primary btn-block mt-3" type="button" data-toggle="collapse" data-target="#collapseResearch" aria-expanded="false" aria-controls="collapseResearch">
+    Research Page
+  </button>
 
-    <label for="researchAboutInput">About</label>
-    <textarea class="form-control" id="researchAboutInput" rows="5"><%= t(:research_page)[:about] %></textarea>
+  <div class="collapse p-3" id="collapseResearch">
+    <div class="card card-body">
+      <h3>Research Page</h3>
+      <form id="researchPageForm">
+        <div class="form-group research_page mt-3">
+          <label for="researchTitleInput">Title</label>
+          <input type="text" class="form-control" id="researchTitleInput" aria-describedby="emailHelp" value="<%= t(:research_page)[:title] %>">
 
-    <label for="researchSeoKeywordInput">SEO Keywords</label>
-    <input type="text" class="form-control" id="researchSeoKeywordInput" aria-describedby="emailHelp" value="<%= t(:research_page)[:seo_keywords] %>">
+          <label for="researchAboutInput">About</label>
+          <textarea class="form-control" id="researchAboutInput" rows="5"><%= t(:research_page)[:about] %></textarea>
 
-    <label for="researchSeoDescriptionInput">SEO Description</label>
-    <textarea class="form-control" id="researchSeoDescriptionInput" rows="3"><%= t(:research_page)[:seo_description] %></textarea>
+          <label for="researchSeoKeywordInput">SEO Keywords</label>
+          <input type="text" class="form-control" id="researchSeoKeywordInput" aria-describedby="emailHelp" value="<%= t(:research_page)[:seo_keywords] %>">
 
-    <button type="button" class="btn btn-warning mt-3">Save</button>
+          <label for="researchSeoDescriptionInput">SEO Description</label>
+          <textarea class="form-control" id="researchSeoDescriptionInput" rows="3"><%= t(:research_page)[:seo_description] %></textarea>
+
+          <input type="submit" class="btn btn-warning mt-3">
+        </div>
+      </form>
+    </div>
   </div>
+
+
 </div>
 
 <script type="text/javascript" charset="utf-8">
