@@ -53,7 +53,10 @@ en:
     seo_description: My latest Research Projects and its explanation.
   contact_page:
     title: Contact Me
-    about: Please feel free to contact me by using form below
-    seo_keywords: Contact, Contact Me, Sent me Email, Questions, Social Media
-    seo_description: If you want to sent me an email with any questions please use
-      following form. I will be happy to answer any questions
+    about: Please use the form below to contact me
+    seo_keywords: CV, Else
+    seo_description: Here is my CV please review
+  cv_page:
+    doc: https://drive.google.com/file/d/1wsm0mBcmoK-1HNQBzKeEKilOzHPk8SdU/preview
+    seo_keywords: CV, else
+    seo_description: Here is my CV please review, Add more description here

@@ -39,4 +39,15 @@ class AdminPanelController < ApplicationController
     update_locales('seo_keywords', params[:seo_keywords], 'contact_page')
     update_locales('seo_description', params[:seo_description], 'contact_page')
   end
+
+  def update_cv_page
+    unless params[:doc] && params[:seo_keywords] && params[:seo_description]
+      render status: 500, json: {
+        message: "Wrong params. Contact Web Administrator"
+      }
+    end
+    update_locales('doc', params[:doc], 'cv_page')
+    update_locales('seo_keywords', params[:seo_keywords], 'cv_page')
+    update_locales('seo_description', params[:seo_description], 'cv_page')
+  end
 end

@@ -34,6 +34,15 @@ $( document ).ready(function() {
     sendFormHandler(contactPageInputs, 'update_contact_page');
   });
 
+  $( "#cvPageForm" ).submit(function( event ) {
+    event.preventDefault();
+    let cvPageInputs = {};
+    cvPageInputs.doc = $("#cvDocInput").val();
+    cvPageInputs.seo_keywords = $("#cvSeoKeywordInput").val();
+    cvPageInputs.seo_description = $("#cvSeoDescriptionInput").val();
+    sendFormHandler(cvPageInputs, 'update_cv_page');
+  });
+
   function sendFormHandler(inputs, apiPoint) {
     let base_url = gon.base_url;
 
