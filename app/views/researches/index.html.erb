@@ -64,4 +64,21 @@
 <div class="container">
   <%= link_to 'New Research', new_research_path if admin_signed_in?%>
 </div>
+<div class="container">
+  <div id="disqus_thread"></div>
+</div>
 
+<script>
+    var disqus_config = function () {
+    this.page.url = "<%= researches_url %>";
+    this.page.identifier = "<%= @page_title %>";
+    };
+
+    (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://my-portfolio-13.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
