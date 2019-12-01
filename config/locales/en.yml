@@ -60,3 +60,7 @@ en:
     doc: https://drive.google.com/file/d/1wsm0mBcmoK-1HNQBzKeEKilOzHPk8SdU/preview
     seo_keywords: CV, else
     seo_description: Here is my CV please review, Add more description here
+  teaching_page:
+    title: Teaching
+    seo_keywords: Teaching, Page
+    seo_description: Here are my teaching experiences

@@ -1,8 +1,12 @@
 <% @first = true %>
+<% @page_title = "Teaching | Fateme Esmailie" %>
+<% @seo_keywords += t(:teaching_page)[:seo_keywords] %>
+<% @teachings.each { |r| @seo_keywords += (", " + r.title) } %>
+<% @seo_description = t(:teaching_page)[:seo_description] %>
 
 <div class="container pt-3 pr-5 pl-5 pb-5">
   <div class="header-font text-center text-break">
-    <%= Teaching %>
+    <%= t(:teaching_page)[:title] %>
   </div>
 
   <div class="accordion" id="accordionTeaching">
