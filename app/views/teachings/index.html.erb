@@ -1,5 +1,15 @@
-<% @page_title = "Teaching | Fateme Esmailie" %>
-<% @seo_keywords += "Teaching" %>
-<% @seo_description = "" %>
+<div class="container">
+  <h1>Teachings</h1>
+  <% @teachings.each do |teaching| %>
+    <div>
+      <%= teaching.title%>
+    </div>
+    <div class="reach-text">
+      <%= teaching.body_area %>
+    </div>
+  <% end %>
+</div>
 
-Teaching Page
+<br>
+
+<%= link_to 'New Teaching', new_teaching_path %>

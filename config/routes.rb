@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :teachings
   devise_for :admins,
              controllers: { registrations: "registrations"},
              path: '',
@@ -11,7 +12,6 @@ Rails.application.routes.draw do
   resources :contacts, only: [:index]
   resources :services, only: [:index]
   resources :cvs, only: [:index]
-  resources :teachings, only: [:index]
 
   get 'admin_panel', to: "admin_panel#index"
   post 'admin_panel/update_home_page', to: "admin_panel#update_home_page"
