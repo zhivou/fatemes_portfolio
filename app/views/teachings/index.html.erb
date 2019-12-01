@@ -35,6 +35,13 @@
           </div>
         </div>
       </div>
+
+      <% if admin_signed_in? %>
+        <div>
+          <%= link_to 'Edit', edit_teaching_path(teaching) %>
+          <%= link_to 'Destroy', teaching, method: :delete, data: { confirm: 'Are you sure?' } %>
+        </div>
+      <% end %>
       <% @first = false %>
     <% end %>
   </div>

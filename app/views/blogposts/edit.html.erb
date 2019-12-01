@@ -1,8 +1,10 @@
 <%= stylesheet_link_tag "actiontext" %>
 
-<h1>Editing Blogpost</h1>
+<div class="container">
+  <h1>Editing Blogpost</h1>
 
-<%= render 'form', blogpost: @blogpost %>
+  <%= render 'form', blogpost: @blogpost %>
 
-<%= link_to 'Show', @blogpost %> |
-<%= link_to 'Back', blogposts_path %>
+  <%= link_to 'Show', @blogpost %> |
+  <%= link_to 'Back', blogposts_path %>
+</div>
