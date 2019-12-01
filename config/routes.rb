@@ -10,7 +10,6 @@ Rails.application.routes.draw do
   root to: 'home#index'
 
   resources :contacts, only: [:index]
-  resources :services, only: [:index]
   resources :cvs, only: [:index]
 
   get 'admin_panel', to: "admin_panel#index"
