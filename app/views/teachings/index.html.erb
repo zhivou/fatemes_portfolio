@@ -1,15 +1,41 @@
-<div class="container">
-  <h1>Teachings</h1>
-  <% @teachings.each do |teaching| %>
-    <div>
-      <%= teaching.title%>
-    </div>
-    <div class="reach-text">
-      <%= teaching.body_area %>
-    </div>
-  <% end %>
+<% @first = true %>
+
+<div class="container pt-3 pr-5 pl-5 pb-5">
+  <div class="header-font text-center text-break">
+    <%= Teaching %>
+  </div>
+
+  <div class="accordion" id="accordionTeaching">
+    <% @teachings.each do |teaching| %>
+      <div class="card">
+        <div class="card-header" id="heading<%= teaching.id.to_s %>">
+          <h2 class="mb-0">
+            <button
+              class="btn btn-link"
+              type="button" data-toggle="collapse"
+              data-target="#collapse<%= teaching.id.to_s %>"
+              aria-expanded="true"
+              aria-controls="collapseOne">
+              <%= teaching.title %>
+            </button>
+          </h2>
+        </div>
+
+        <div
+          id="collapse<%= teaching.id.to_s %>"
+          class="collapse <%= "show" if @first %>"
+          aria-labelledby="heading<%= teaching.id.to_s %>"
+          data-parent="#accordionTeaching">
+          <div class="card-body">
+            <%= teaching.body_area %>
+          </div>
+        </div>
+      </div>
+      <% @first = false %>
+    <% end %>
+  </div>
 </div>
 
-<br>
-
-<%= link_to 'New Teaching', new_teaching_path %>
+<div class="container">
+  <%= link_to 'New Teaching', new_teaching_path if admin_signed_in?%>
+</div>
