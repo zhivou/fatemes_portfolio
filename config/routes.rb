@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :teachings
+  resources :teachings, except: [:show]
   devise_for :admins,
              controllers: { registrations: "registrations"},
              path: '',

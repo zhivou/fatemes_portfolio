@@ -9,13 +9,13 @@
     <%= t(:teaching_page)[:title] %>
   </div>
 
-  <div class="accordion" id="accordionTeaching">
+  <div class="accordion mt-3" id="accordionTeaching">
     <% @teachings.each do |teaching| %>
       <div class="card">
         <div class="card-header" id="heading<%= teaching.id.to_s %>">
           <h2 class="mb-0">
             <button
-              class="btn btn-link"
+              class="btn btn-link upper no-decoration"
               type="button" data-toggle="collapse"
               data-target="#collapse<%= teaching.id.to_s %>"
               aria-expanded="true"
@@ -30,7 +30,7 @@
           class="collapse <%= "show" if @first %>"
           aria-labelledby="heading<%= teaching.id.to_s %>"
           data-parent="#accordionTeaching">
-          <div class="card-body">
+          <div class="card-body reach-text">
             <%= teaching.body_area %>
           </div>
         </div>

@@ -1,10 +1,12 @@
 class TeachingsController < ApplicationController
+
+  before_action :authenticate_admin!, only: [:new, :edit, :update, :destroy, :create]
   before_action :set_teaching, only: [:show, :edit, :update, :destroy]
 
   # GET /teachings
   # GET /teachings.json
   def index
-    @teachings = Teaching.all
+    @teachings = Teaching.order(id: :desc)
   end
 
   # GET /teachings/1
@@ -28,7 +30,7 @@ class TeachingsController < ApplicationController
 
     respond_to do |format|
       if @teaching.save
-        format.html { redirect_to @teaching, notice: 'Teaching was successfully created.' }
+        format.html { redirect_to teachings_path, notice: 'Teaching was successfully created.' }
         format.json { render :show, status: :created, location: @teaching }
       else
         format.html { render :new }
@@ -42,7 +44,7 @@ class TeachingsController < ApplicationController
   def update
     respond_to do |format|
       if @teaching.update(teaching_params)
-        format.html { redirect_to @teaching, notice: 'Teaching was successfully updated.' }
+        format.html { redirect_to teachings_path, notice: 'Teaching was successfully updated.' }
         format.json { render :show, status: :ok, location: @teaching }
       else
         format.html { render :edit }
