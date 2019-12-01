@@ -1,0 +1,29 @@
+<div class="container pt-3 pr-5 pl-5 pb-5">
+  <div class="header-font text-center text-break">
+    <%= t(:service_page)[:title] %>
+  </div>
+
+  <% @services.each do |service| %>
+    <div>
+      <div class="text-center h2 underline_border p-3 ml-5 mr-5">
+        <%= service.title %>
+      </div>
+    </div>
+
+    <div class="reach-text">
+      <%= service.body %>
+    </div>
+
+    <div>
+      <%= link_to 'Show', service %>
+      <%= link_to 'Edit', edit_service_path(service) %>
+      <%= link_to 'Destroy', service, method: :delete, data: { confirm: 'Are you sure?' } %>
+    </div>
+
+  <% end %>
+</div>
+
+<div class="container">
+  <%= link_to 'New Service', new_service_path %>
+</div>
+
