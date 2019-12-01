@@ -11,16 +11,16 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="field mt-3">
     <%= form.label :title %>
-    <%= form.text_area :title %>
+    <%= form.text_field :title, class: "form-control" %>
   </div>
 
-  <div class="field">
+  <div class="field mt-3">
     <%= form.rich_text_area :body_area, id: :blog_body_area %>
   </div>
 
-  <div class="actions">
+  <div class="actions mt-3">
     <%= form.submit %>
   </div>
 <% end %>

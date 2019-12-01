@@ -4,26 +4,28 @@
   </div>
 
   <% @services.each do |service| %>
-    <div>
-      <div class="text-center h2 underline_border p-3 ml-5 mr-5">
-        <%= service.title %>
+    <div class="mt-5">
+      <div>
+        <div class="text-center h2 p-3 ml-5 mr-5">
+          <%= service.title %>
+        </div>
       </div>
-    </div>
 
-    <div class="reach-text">
-      <%= service.body %>
-    </div>
+      <div class="reach-text">
+        <%= service.body %>
+      </div>
 
-    <div>
-      <%= link_to 'Show', service %>
-      <%= link_to 'Edit', edit_service_path(service) %>
-      <%= link_to 'Destroy', service, method: :delete, data: { confirm: 'Are you sure?' } %>
+      <% if admin_signed_in? %>
+        <div class="text-center">
+          <%= link_to 'Edit', edit_service_path(service) %>
+          <%= link_to 'Destroy', service, method: :delete, data: { confirm: 'Are you sure?' } %>
+        </div>
+      <% end %>
     </div>
-
   <% end %>
 </div>
 
 <div class="container">
-  <%= link_to 'New Service', new_service_path %>
+  <%= link_to 'New Service', new_service_path if admin_signed_in?%>
 </div>
 
