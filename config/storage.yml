@@ -10,4 +10,4 @@ google:
   service: GCS
   project: fateme-portfolio
   credentials: <%= ENV['GOOGLE_APPLICATION_CREDENTIALS'] %>
-  bucket: skrdev.com
+  bucket: esmailie.com
