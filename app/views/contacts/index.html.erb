@@ -1,16 +1,16 @@
 <% @page_title = "Contact Me | Fateme Esmailie" %>
-<% @seo_keywords += t(:contact_page)[:seo_keywords] %>
-<% @seo_description = t(:contact_page)[:seo_description] %>
+<% @seo_keywords += @contact_page['seo_keywords'] %>
+<% @seo_description = @contact_page['seo_description'] %>
 
 <div class="newspaper pt-3 pr-5 pl-5 pb-5">
   <div class="bg-white">
     <div class="row text-center">
       <div class="col-sm-12 col-lg-12 header-font">
-        <%= t(:contact_page)[:title] %>
+        <%= @contact_page['title'] %>
       </div>
     </div>
     <div class="container text-center upper_border underline_border pt-3 pb-3 pl-5 pr-5">
-      <%= t(:contact_page)[:about] %>
+      <%= @contact_page['about'] %>
     </div>
   </div>
   <div class="container mt-5">

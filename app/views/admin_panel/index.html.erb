@@ -70,16 +70,16 @@
       <form id="contactPageForm">
         <div class="form-group contact_page mt-3">
           <label for="contactTitleInput">Title</label>
-          <input type="text" class="form-control" id="contactTitleInput" aria-describedby="emailHelp" value="<%= t(:contact_page)[:title] %>">
+          <input type="text" class="form-control" id="contactTitleInput" aria-describedby="emailHelp" value="<%= @contact_page['title'] %>">
 
           <label for="contactAboutInput">About</label>
-          <textarea class="form-control" id="contactAboutInput" rows="5"><%= t(:contact_page)[:about] %></textarea>
+          <textarea class="form-control" id="contactAboutInput" rows="5"><%= @contact_page['about'] %></textarea>
 
           <label for="contactSeoKeywordInput">SEO Keywords</label>
-          <input type="text" class="form-control" id="contactSeoKeywordInput" aria-describedby="emailHelp" value="<%= t(:contact_page)[:seo_keywords] %>">
+          <input type="text" class="form-control" id="contactSeoKeywordInput" aria-describedby="emailHelp" value="<%= @contact_page['seo_keywords'] %>">
 
           <label for="contactSeoDescriptionInput">SEO Description</label>
-          <textarea class="form-control" id="contactSeoDescriptionInput" rows="3"><%= t(:contact_page)[:seo_description] %></textarea>
+          <textarea class="form-control" id="contactSeoDescriptionInput" rows="3"><%= @contact_page['seo_description'] %></textarea>
 
           <input type="submit" class="btn btn-warning mt-3">
         </div>
