@@ -14,16 +14,16 @@
       <form id="homePageForm">
         <div class="form-group home_page mt-3">
           <label for="nameInput">Header Name</label>
-          <input type="text" class="form-control" id="nameInput" aria-describedby="emailHelp" value="<%= t(:home_page)[:name] %>">
+          <input type="text" class="form-control" id="nameInput" aria-describedby="emailHelp" value="<%= @home_page['name'] %>">
 
           <label for="bioInput">Bio</label>
-          <textarea class="form-control" id="bioInput" rows="5"><%= t(:home_page)[:about] %></textarea>
+          <textarea class="form-control" id="bioInput" rows="5"><%= @home_page['about'] %></textarea>
 
           <label for="seoKeywordInput">SEO Keywords</label>
-          <input type="text" class="form-control" id="seoKeywordInput" aria-describedby="emailHelp" value="<%= t(:home_page)[:seo_keywords] %>">
+          <input type="text" class="form-control" id="seoKeywordInput" aria-describedby="emailHelp" value="<%= @home_page['seo_keywords'] %>">
 
           <label for="seoDescriptionInput">SEO Description</label>
-          <textarea class="form-control" id="seoDescriptionInput" rows="3"><%= t(:home_page)[:seo_description] %></textarea>
+          <textarea class="form-control" id="seoDescriptionInput" rows="3"><%= @home_page['seo_description'] %></textarea>
 
           <input type="submit" class="btn btn-warning mt-3">
         </div>

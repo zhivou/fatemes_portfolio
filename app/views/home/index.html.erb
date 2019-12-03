@@ -1,7 +1,7 @@
 <%= stylesheet_link_tag "home" %>
 <% @page_title = "Home | Fateme Esmailie" %>
-<% @seo_keywords += t(:home_page)[:seo_keywords] %>
-<% @seo_description = t(:home_page)[:seo_description] %>
+<% @seo_keywords += @home_page['seo_keywords'] %>
+<% @seo_description = @home_page['seo_description'] %>
 
 <div class="row container-fluid">
   <div class="col-8 no_padding">
@@ -13,10 +13,10 @@
       <span class="blue">HI</span>, I am
     </div>
     <div class="display-1 underline_border">
-      <span><%= t(:home_page)[:name] %></span>
+      <span><%= @home_page['name'] %></span>
     </div>
     <div class="p-3">
-      <%= t(:home_page)[:about] %>
+      <%= @home_page['about'] %>
     </div>
   </div>
 </div>

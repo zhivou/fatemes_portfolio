@@ -6,7 +6,7 @@ module SetStaticContent
   end
 
   def set_static_data
-    defaults = Setting.where(current: true).first.select(:data)
+    defaults = Setting.where(current: true).first.data
     @home_page = defaults['home_page']
     @research_page = defaults['research_page']
     @contact_page = defaults['contact_page']

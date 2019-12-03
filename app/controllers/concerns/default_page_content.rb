@@ -47,8 +47,7 @@ module DefaultPageContent
                     et tempora cumque voluptas adipisci dolorem nesciunt doloremque possimus dicta
                     autem sunt ea cum qui exercitationem commodi odit et voluptatem accusamus consequuntur.',
             seo_keywords: 'BIO, About Me, Welcome, Something Else',
-            seo_description: 'Here is my bio page where you can know about me and what I have
-                              accomplished during my research time and beyond'
+            seo_description: 'Here is my bio page where you can know about me and what I have accomplished during my research time and beyond'
         },
         research_page: {
             title: 'My Projects',
@@ -87,14 +86,10 @@ module DefaultPageContent
     }
   end
 
-  def update_locales(key, value, section=nil)
-    data = YAML.load_file "config/locales/en.yml"
-    if section
-      data['en'][section][key] = value
-    else
-      data[key] = value
-    end
-    File.open("config/locales/en.yml", 'w') { |f| YAML.dump(data, f) }
+  def update_locales(key, value, section)
+    defaults = Setting.where(current: true).first
+    defaults.data[section][key] = value
+    defaults.save!
   end
 
   private
