@@ -3,6 +3,7 @@ class ApplicationController < ActionController::Base
   include DefaultPageContent
   before_action :init_base_url
   before_action :init_default_data
+  include SetStaticContent
 
   private
   def init_base_url
