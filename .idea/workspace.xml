@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5f32980-dc6d-4bc7-83f6-145762e73bdf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.rakeTasks" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/fatemes_portfolio.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/fatemes_portfolio.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/blogposts/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/blogposts/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/researches/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/researches/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/researches/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/researches/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin_panel/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin_panel/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/cvs/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/cvs/index.html.erb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +54,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/assets/images" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
@@ -217,6 +212,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Ruby.seeds" />
+        <item itemvalue="Ruby.seeds" />
+        <item itemvalue="Ruby.seeds" />
+        <item itemvalue="Ruby.seeds" />
+        <item itemvalue="Ruby.seeds" />
       </list>
     </recent_temporary>
   </component>
@@ -294,6 +293,10 @@
       <workItem from="1575081745672" duration="381000" />
       <workItem from="1575082152777" duration="919000" />
       <workItem from="1575083397504" duration="2984000" />
+      <workItem from="1575231974561" duration="12984000" />
+      <workItem from="1575337975474" duration="567000" />
+      <workItem from="1575345106144" duration="415000" />
+      <workItem from="1575347634814" duration="6605000" />
     </task>
     <servers />
   </component>
@@ -358,6 +361,14 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="349" y="185" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1575085239328" />
+    <state x="497" y="155" width="685" height="762" key="find.popup" timestamp="1575252217222">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="497" y="155" width="685" height="762" key="find.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1575252217222" />
+    <state x="505" y="250" width="670" height="676" key="search.everywhere.popup" timestamp="1575254804839">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="505" y="250" width="670" height="676" key="search.everywhere.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1575254804839" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/fatemes_portfolio@Development__fatemes_portfolio.rcov" NAME="Development: fatemes_portfolio Coverage Results" MODIFIED="1575082738718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="fatemes_portfolio" />
