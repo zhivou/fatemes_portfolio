@@ -42,16 +42,16 @@
       <form id="researchPageForm">
         <div class="form-group research_page mt-3">
           <label for="researchTitleInput">Title</label>
-          <input type="text" class="form-control" id="researchTitleInput" aria-describedby="emailHelp" value="<%= t(:research_page)[:title] %>">
+          <input type="text" class="form-control" id="researchTitleInput" aria-describedby="emailHelp" value="<%= @research_page['title'] %>">
 
           <label for="researchAboutInput">About</label>
-          <textarea class="form-control" id="researchAboutInput" rows="5"><%= t(:research_page)[:about] %></textarea>
+          <textarea class="form-control" id="researchAboutInput" rows="5"><%= @research_page['about'] %></textarea>
 
           <label for="researchSeoKeywordInput">SEO Keywords</label>
-          <input type="text" class="form-control" id="researchSeoKeywordInput" aria-describedby="emailHelp" value="<%= t(:research_page)[:seo_keywords] %>">
+          <input type="text" class="form-control" id="researchSeoKeywordInput" aria-describedby="emailHelp" value="<%= @research_page['seo_keywords'] %>">
 
           <label for="researchSeoDescriptionInput">SEO Description</label>
-          <textarea class="form-control" id="researchSeoDescriptionInput" rows="3"><%= t(:research_page)[:seo_description] %></textarea>
+          <textarea class="form-control" id="researchSeoDescriptionInput" rows="3"><%= @research_page['seo_description'] %></textarea>
 
           <input type="submit" class="btn btn-warning mt-3">
         </div>

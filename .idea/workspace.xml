@@ -5,6 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/concerns/default_page_content.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/concerns/default_page_content.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/concerns/set_static_content.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/concerns/set_static_content.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin_panel/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin_panel/index.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/home/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/index.html.erb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -298,7 +299,7 @@
       <workItem from="1575231974561" duration="12984000" />
       <workItem from="1575337975474" duration="567000" />
       <workItem from="1575345106144" duration="415000" />
-      <workItem from="1575347634814" duration="5651000" />
+      <workItem from="1575347634814" duration="5908000" />
     </task>
     <servers />
   </component>
