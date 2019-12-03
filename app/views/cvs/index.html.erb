@@ -1,10 +1,10 @@
 <% @page_title = "Curriculum Vitae | Fateme Esmailie" %>
-<% @seo_keywords += t(:cv_page)[:seo_keywords] %>
-<% @seo_description = t(:cv_page)[:seo_description] %>
+<% @seo_keywords += @cv_page['seo_keywords'] %>
+<% @seo_description = @cv_page['seo_description'] %>
 
 <div class="container">
   <iframe
-    src="<%= t(:cv_page)[:doc] %>"
+    src="<%= @cv_page['doc'] %>"
     frameborder="0"
     style="width: 100%; height: 90vh; border-radius: 5px"
   >

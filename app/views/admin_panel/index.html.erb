@@ -100,13 +100,13 @@
       <form id="cvPageForm">
         <div class="form-group cv_page mt-3">
           <label for="cvDocInput">Document link</label>
-          <input type="text" class="form-control" id="cvDocInput" value="<%= t(:cv_page)[:doc] %>">
+          <input type="text" class="form-control" id="cvDocInput" value="<%= @cv_page['doc'] %>">
 
           <label for="cvSeoKeywordInput">SEO Keywords</label>
-          <input type="text" class="form-control" id="cvSeoKeywordInput" aria-describedby="emailHelp" value="<%= t(:cv_page)[:seo_keywords] %>">
+          <input type="text" class="form-control" id="cvSeoKeywordInput" aria-describedby="emailHelp" value="<%= @cv_page['seo_keywords'] %>">
 
           <label for="cvSeoDescriptionInput">SEO Description</label>
-          <textarea class="form-control" id="cvSeoDescriptionInput" rows="3"><%= t(:cv_page)[:seo_description] %></textarea>
+          <textarea class="form-control" id="cvSeoDescriptionInput" rows="3"><%= @cv_page['seo_description'] %></textarea>
 
           <input type="submit" class="btn btn-warning mt-3">
         </div>
