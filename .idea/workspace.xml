@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f5f32980-dc6d-4bc7-83f6-145762e73bdf" name="Default Changelist" comment="" />
+    <list default="true" id="f5f32980-dc6d-4bc7-83f6-145762e73bdf" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/fatemes_portfolio.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/fatemes_portfolio.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -297,6 +300,7 @@
       <workItem from="1575493783472" duration="285000" />
       <workItem from="1575495272031" duration="249000" />
       <workItem from="1575496008127" duration="197000" />
+      <workItem from="1575497793617" duration="410000" />
     </task>
     <servers />
   </component>
