@@ -11,7 +11,11 @@
   <div>
     <%= image_tag 'project.jpg', class: "img-fluid", style: "" %>
   </div>
-
+  <div class="text-center">
+    <span class="badge badge-pill badge-info mt-3"><h3 class="p-1">Citations: <%= @total_citations %></h3></span>
+    <span class="badge badge-pill badge-info mt-3"><h3 class="p-1">h-index: <%= @h_index %></h3></span>
+    <span class="badge badge-pill badge-info mt-3"><h3 class="p-1">i10-index: <%= @i10_index %></h3></span>
+  </div>
   <div class="p-3 mt-3">
     <h3><%= @research_page['about'] %></h3>
   </div>
@@ -64,6 +68,16 @@
 <div class="container">
   <%= link_to 'New Research', new_research_path if admin_signed_in?%>
 </div>
+
+<div class="container mt-3 mb-3 p-5">
+  <h3>My latest Publications:</h3>
+  <ul>
+    <% @publications.each do |p| %>
+      <li><%= p[:title] %></li>
+    <% end %>
+  </ul>
+</div>
+
 <div class="container">
   <div id="disqus_thread"></div>
 </div>

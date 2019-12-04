@@ -3,11 +3,10 @@ module CitationsLoader
 
   included do
     before_action :load_citations
+    before_action :set_citations
   end
 
   def load_citations
-    # Add if statement to load the updates only each 12 hours
-    # Scholar.first.publications[5][:title]
     if !Scholar.exists? || Scholar.order(id: :desc).first.created_at + 12.hours < Time.now.utc
       publications = Google::Scholar::Helper::Base.new(@google_scholar['link'])
       publications_db = Scholar.new(
@@ -23,5 +22,15 @@ module CitationsLoader
         puts 'WARNING: Something went wrong. Check Google Scholar Helper Gem and Scholar web page'
       end
     end
+  end
+
+  def set_citations
+    citations = Scholar.order(id: :desc).first
+    @publications = citations.publications
+    @publications_title = citations.title
+    @publications_key_words = citations.key_words
+    @total_citations = citations.total_citations
+    @h_index = citations.h_index
+    @i10_index = citations.i10_index
   end
 end
