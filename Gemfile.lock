@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/zhivou/google-scholar-helper.git
-  revision: e57cdfe1f7c63dac1b76dacee62da8e058592daf
+  revision: d2bedbb2df2fa6376d8d629172bd040cc5ec536b
   specs:
-    google-scholar-helper (0.1.6)
+    google-scholar-helper (0.1.7)
       mechanize (~> 2.7, >= 2.7.6)
       nokogiri (~> 1.10, >= 1.10.5)
 
