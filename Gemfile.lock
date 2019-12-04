@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/zhivou/google-scholar-helper.git
-  revision: e9b695fa1befc4d65098aec2562ba7fc5cd8b232
+  revision: 6224b0ed10be29ca5b8b78c37a067a1e0128d086
   specs:
-    google-scholar-helper (0.1.0)
+    google-scholar-helper (0.1.1)
       mechanize (~> 2.7, >= 2.7.6)
       nokogiri (~> 1.10, >= 1.10.5)
 
@@ -217,7 +217,7 @@ GEM
     net-http-persistent (3.1.0)
       connection_pool (~> 2.2)
     nio4r (2.5.2)
-    nokogiri (1.10.5)
+    nokogiri (1.10.7)
       mini_portile2 (~> 2.4.0)
     ntlm-http (0.1.1)
     orm_adapter (0.5.0)
