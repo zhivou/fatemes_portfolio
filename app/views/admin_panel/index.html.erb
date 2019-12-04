@@ -5,6 +5,8 @@
   <small id="emailHelp" class="form-text text-muted">Update site sections respectively. By changing this you will update site pages text.</small>
   <hr>
 
+
+  <h3>Static pages settings</h3>
   <button class="btn btn-primary btn-block mt-3" type="button" data-toggle="collapse" data-target="#collapseHome" aria-expanded="false" aria-controls="collapseHome">
     Home Page
   </button>
@@ -114,12 +116,12 @@
     </div>
   </div>
 
-  <div>
+  <div class="mt-3">
     <h3>Google Scholar</h3>
     <form id="scholarForm">
       <div class="form-group mt-3">
         <label for="scholarInput">Document link</label>
-        <input type="text" class="form-control" id="scholarInput" value="<%= @google_scholar %>">
+        <input type="text" class="form-control" id="scholarInput" value="<%= @google_scholar['link'] %>">
 
         <input type="submit" class="btn btn-warning mt-3">
       </div>

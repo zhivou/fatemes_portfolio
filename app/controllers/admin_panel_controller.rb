@@ -52,10 +52,11 @@ class AdminPanelController < ApplicationController
   end
 
   def update_scholar
-    unless params[:doc] && params[:seo_keywords] && params[:seo_description]
+    unless params[:link]
       render status: 500, json: {
         message: "Wrong params. Contact Web Administrator"
       }
     end
+    update_locales('link', params[:link], 'google_scholar')
   end
 end
