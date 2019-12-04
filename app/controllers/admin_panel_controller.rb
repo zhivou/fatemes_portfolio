@@ -50,4 +50,17 @@ class AdminPanelController < ApplicationController
     update_locales('seo_keywords', params[:seo_keywords], 'cv_page')
     update_locales('seo_description', params[:seo_description], 'cv_page')
   end
+
+  def update_scholar
+    unless params[:link]
+      render status: 500, json: {
+        message: "Wrong params. Contact Web Administrator"
+      }
+    end
+    update_locales('link', params[:link], 'google_scholar')
+  end
+
+  def force_load_citation
+    load_citations(true)
+  end
 end

@@ -13,5 +13,6 @@ module SetStaticContent
     @cv_page = defaults['cv_page']
     @teaching_page = defaults['teaching_page']
     @service_page = defaults['service_page']
+    @google_scholar = defaults['google_scholar']
   end
 end

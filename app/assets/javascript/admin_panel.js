@@ -43,6 +43,13 @@ $( document ).ready(function() {
     sendFormHandler(cvPageInputs, 'update_cv_page');
   });
 
+  $( "#scholarForm" ).submit(function( event ) {
+    event.preventDefault();
+    let scholarPageInputs = {};
+    scholarPageInputs.link = $("#scholarInput").val();
+    sendFormHandler(scholarPageInputs, 'update_scholar');
+  });
+
   function sendFormHandler(inputs, apiPoint) {
     let base_url = gon.base_url;
 

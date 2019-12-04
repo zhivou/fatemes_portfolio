@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  publications: MyString
+  title: MyString
+  key_words: MyString
+  total_citations: MyString
+  h_index: MyString
+  i10_index: MyString
+
+two:
+  publications: MyString
+  title: MyString
+  key_words: MyString
+  total_citations: MyString
+  h_index: MyString
+  i10_index: MyString

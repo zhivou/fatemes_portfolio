@@ -82,6 +82,9 @@ module DefaultPageContent
             title: 'Service',
             seo_keywords: 'Service',
             seo_description: 'Add description'
+        },
+        google_scholar: {
+          link: 'https://scholar.google.com/citations?hl=en&user=0wPISvEAAAAJ'
         }
     }
   end

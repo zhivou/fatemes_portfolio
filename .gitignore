@@ -126,3 +126,5 @@ build-iPhoneSimulator/
 /.gitignore
 /.idea/misc.xml
 !/.gitignore
+!/.idea/workspace.xml
+!/.idea/fatemes_portfolio.iml
