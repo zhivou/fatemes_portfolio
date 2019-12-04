@@ -6,8 +6,8 @@ module CitationsLoader
     before_action :set_citations
   end
 
-  def load_citations
-    if !Scholar.exists? || Scholar.order(id: :desc).first.created_at + 12.hours < Time.now.utc
+  def load_citations(force=false)
+    if !Scholar.exists? || Scholar.order(id: :desc).first.created_at + 12.hours < Time.now.utc || force
       publications = Google::Scholar::Helper::Base.new(@google_scholar['link'])
       publications_db = Scholar.new(
           publications:publications.publications,

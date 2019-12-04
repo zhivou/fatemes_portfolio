@@ -59,4 +59,8 @@ class AdminPanelController < ApplicationController
     end
     update_locales('link', params[:link], 'google_scholar')
   end
+
+  def force_load_citation
+    load_citations(true)
+  end
 end
