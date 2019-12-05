@@ -128,3 +128,4 @@ build-iPhoneSimulator/
 !/.gitignore
 !/.idea/workspace.xml
 !/.idea/fatemes_portfolio.iml
+.idea/*
