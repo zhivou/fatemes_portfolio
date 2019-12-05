@@ -8,7 +8,7 @@ module CitationsLoader
 
   def load_citations(force=false)
     if !Scholar.exists? || Scholar.order(id: :desc).first.created_at + 12.hours < Time.now.utc || force
-      publications = Google::Scholar::Helper::Base.new(@google_scholar['link'])
+      publications = Google::Scholar::Helper::Base.new(@google_scholar['link'], ENV['QUOTAGUARD_URL'])
       publications_db = Scholar.new(
           publications:publications.publications,
           title: publications.title,

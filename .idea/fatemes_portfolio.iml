@@ -74,7 +74,7 @@
     <orderEntry type="library" scope="PROVIDED" name="google-cloud-core (v1.4.1, RVM: ruby-2.6.4) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="google-cloud-env (v1.3.0, RVM: ruby-2.6.4) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="google-cloud-storage (v1.24.0, RVM: ruby-2.6.4) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="google-scholar-helper (v0.1.15@cfc003, RVM: ruby-2.6.4) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="google-scholar-helper (v0.1.16@ac57c5, RVM: ruby-2.6.4) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="googleauth (v0.10.0, RVM: ruby-2.6.4) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="http-cookie (v1.0.3, RVM: ruby-2.6.4) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="httparty (v0.13.7, RVM: ruby-2.6.4) [gem]" level="application" />
@@ -118,7 +118,7 @@
     <orderEntry type="library" scope="PROVIDED" name="pg (v1.1.4, RVM: ruby-2.6.4) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="popper_js (v1.14.5, RVM: ruby-2.6.4) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="public_suffix (v4.0.1, RVM: ruby-2.6.4) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="puma (v3.12.1, RVM: ruby-2.6.4) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="puma (v3.12.2, RVM: ruby-2.6.4) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack (v2.0.7, RVM: ruby-2.6.4) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack-proxy (v0.6.5, RVM: ruby-2.6.4) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack-test (v1.1.0, RVM: ruby-2.6.4) [gem]" level="application" />
