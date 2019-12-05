@@ -74,15 +74,17 @@
     <orderEntry type="library" scope="PROVIDED" name="google-cloud-core (v1.4.1, RVM: ruby-2.6.4) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="google-cloud-env (v1.3.0, RVM: ruby-2.6.4) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="google-cloud-storage (v1.24.0, RVM: ruby-2.6.4) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="google-scholar-helper (v0.1.12@516c80, RVM: ruby-2.6.4) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="google-scholar-helper (v0.1.15@cfc003, RVM: ruby-2.6.4) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="googleauth (v0.10.0, RVM: ruby-2.6.4) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="http-cookie (v1.0.3, RVM: ruby-2.6.4) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="httparty (v0.13.7, RVM: ruby-2.6.4) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="httpclient (v2.8.3, RVM: ruby-2.6.4) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="i18n (v1.7.0, RVM: ruby-2.6.4) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="image_processing (v1.9.3, RVM: ruby-2.6.4) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jbuilder (v2.9.1, RVM: ruby-2.6.4) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jquery-rails (v4.3.5, RVM: ruby-2.6.4) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jquery-ui-rails (v6.0.1, RVM: ruby-2.6.4) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="json (v1.8.6, RVM: ruby-2.6.4) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jwt (v2.2.1, RVM: ruby-2.6.4) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="kaminari (v1.1.1, RVM: ruby-2.6.4) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="kaminari-actionview (v1.1.1, RVM: ruby-2.6.4) [gem]" level="application" />
@@ -104,6 +106,7 @@
     <orderEntry type="library" scope="PROVIDED" name="minitest (v5.13.0, RVM: ruby-2.6.4) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="msgpack (v1.3.1, RVM: ruby-2.6.4) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="multi_json (v1.14.1, RVM: ruby-2.6.4) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="multi_xml (v0.6.0, RVM: ruby-2.6.4) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="multipart-post (v2.1.1, RVM: ruby-2.6.4) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="net-http-digest_auth (v1.4.1, RVM: ruby-2.6.4) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="net-http-persistent (v3.1.0, RVM: ruby-2.6.4) [gem]" level="application" />
