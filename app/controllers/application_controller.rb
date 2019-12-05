@@ -4,7 +4,6 @@ class ApplicationController < ActionController::Base
   before_action :init_base_url
   before_action :init_default_data
   include SetStaticContent
-  include CitationsLoader
 
   private
   def init_base_url
