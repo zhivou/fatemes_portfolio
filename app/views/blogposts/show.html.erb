@@ -19,7 +19,7 @@
       </div>
     </div>
 
-    <div class="col-4 text-center stick-me pt-5">
+    <div class="col-4 text-center text-break stick-me pt-5">
       <div class="header-font-show p-5"><%= @blogpost.title %></div>
       <%= link_to 'Back', blogposts_path, class: "btn btn-outline-dark" %>
     </div>
@@ -35,6 +35,8 @@
 
   <%= link_to 'Edit |', edit_blogpost_path(@blogpost) if admin_signed_in?%>
   <%= link_to 'Back', blogposts_path %>
+
+  <%= render 'application/social_media' %>
 
   <div class="container">
     <div id="disqus_thread"></div>

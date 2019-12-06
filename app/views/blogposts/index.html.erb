@@ -79,3 +79,5 @@
   <%= paginate @blogposts %>
   <%= link_to 'New Blogpost', new_blogpost_path if admin_signed_in?%>
 </div>
+
+<%= render 'application/social_media' %>
