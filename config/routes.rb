@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   resources :blogposts
   root to: 'home#index'
 
-  resources :contacts, only: [:index]
+  resources :contacts, only: [:index, :new, :create]
   resources :cvs, only: [:index]
 
   get 'admin_panel', to: "admin_panel#index"
