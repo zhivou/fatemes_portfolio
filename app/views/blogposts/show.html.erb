@@ -36,6 +36,8 @@
   <%= link_to 'Edit |', edit_blogpost_path(@blogpost) if admin_signed_in?%>
   <%= link_to 'Back', blogposts_path %>
 
+  <%= render 'application/social_media' %>
+
   <div class="container">
     <div id="disqus_thread"></div>
   </div>
