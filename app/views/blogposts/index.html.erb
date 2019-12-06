@@ -1,7 +1,7 @@
 <%= stylesheet_link_tag "blogposts" %>
 <% @page_title = "Blogposts | Fateme Esmailie" %>
 <% @seo_keywords += "Blog, News, Mechanical Engineering, Heat Transfer, " %>
-<% for blogpost in 0..15 do %>
+<% for blogpost in 0..7 do %>
   <% unless @blogposts[blogpost].nil? %>
     <% @seo_keywords += @blogposts[blogpost].title + ", " %>
   <% end %>
@@ -19,7 +19,7 @@
     <div class="row p-5">
 
         <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 site-font">
-          <% for blogpost in 0..3 do %>
+          <% for blogpost in 0..1 do %>
             <% unless @blogposts[blogpost].nil? %>
               <a href="blogposts/<%= @blogposts[blogpost].id %>" class="blogpost">
                 <div class="row-4">
@@ -33,7 +33,7 @@
         </div>
 
       <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 site-font">
-        <% for blogpost in 4..7 do %>
+        <% for blogpost in 2..3 do %>
           <% unless @blogposts[blogpost].nil? %>
             <a href="blogposts/<%= @blogposts[blogpost].id %>" class="blogpost">
               <div class="row-4">
@@ -47,7 +47,7 @@
       </div>
 
       <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 site-font">
-        <% for blogpost in 8..11 do %>
+        <% for blogpost in 4..5 do %>
           <% unless @blogposts[blogpost].nil? %>
             <a href="blogposts/<%= @blogposts[blogpost].id %>" class="blogpost">
               <div class="row-4">
@@ -61,7 +61,7 @@
       </div>
 
       <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 site-font">
-        <% for blogpost in 12..15 do %>
+        <% for blogpost in 6..7 do %>
           <% unless @blogposts[blogpost].nil? %>
             <a href="blogposts/<%= @blogposts[blogpost].id %>" class="blogpost">
               <div class="row-4 no-border">

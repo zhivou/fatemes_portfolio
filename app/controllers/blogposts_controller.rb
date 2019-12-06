@@ -6,7 +6,7 @@ class BlogpostsController < ApplicationController
   # GET /blogposts
   # GET /blogposts.json
   def index
-    @blogposts = Blogpost.order(id: :desc).page(params[:page]).per(16)
+    @blogposts = Blogpost.order(id: :desc).page(params[:page]).per(8)
   end
 
   # GET /blogposts/1
