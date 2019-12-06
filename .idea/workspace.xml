@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5f32980-dc6d-4bc7-83f6-145762e73bdf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/nav_bar.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/fatemes_portfolio.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/fatemes_portfolio.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/application/_navbar_2.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/application/_navbar_2.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/blogposts/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/blogposts/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/home/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/researches/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/researches/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/initializers/assets.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/assets.rb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -335,7 +327,7 @@
       <workItem from="1575580980690" duration="87000" />
       <workItem from="1575581810839" duration="58000" />
       <workItem from="1575603101368" duration="2026000" />
-      <workItem from="1575660192196" duration="4840000" />
+      <workItem from="1575660192196" duration="5091000" />
     </task>
     <servers />
   </component>
