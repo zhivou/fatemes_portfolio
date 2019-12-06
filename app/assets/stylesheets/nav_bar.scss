@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+
+nav {
+  font-family: 'Anton', sans-serif;
+  display: inline-block !important;
+  border-radius: 5px;
+  padding-left: 30px;
+}
+
+a {
+  transition: color 0.5s ease;
+  text-decoration: none !important;
+  color: #333333;
+}
+
+a:hover {
+  transition: color 0.5s ease;
+  color: darkred !important;
+}
+
+.active {
+  color: darkred ;
+}

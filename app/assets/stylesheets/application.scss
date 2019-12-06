@@ -11,6 +11,11 @@ body {
   min-height: 100vh;
 }
 
+.site-font {
+  font-family: 'Roboto Slab', serif !important;
+  font-size: 25px;
+}
+
 .underline_border {
   border-bottom: 2px solid black !important;
 }
@@ -38,8 +43,16 @@ body {
   color: #0099EA;
 }
 
+.black {
+  color: black !important;
+}
+
 .red {
   color: #cc0000;
+}
+
+.darkred {
+  color: darkred;
 }
 
 a:hover {

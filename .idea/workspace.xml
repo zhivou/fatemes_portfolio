@@ -2,12 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5f32980-dc6d-4bc7-83f6-145762e73bdf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/contacts_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/contacts_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/contacts/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/contacts/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/environments/production.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environments/production.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/nav_bar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/fatemes_portfolio.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/fatemes_portfolio.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/application/_navbar_2.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/application/_navbar_2.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/blogposts/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/blogposts/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/home/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/researches/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/researches/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/initializers/assets.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/assets.rb" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,6 +76,18 @@
       <recent name="$PROJECT_DIR$/app/assets/stylesheets" />
       <recent name="$PROJECT_DIR$/app/assets/javascript" />
     </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager" selected="Docker.docker start">
     <configuration name="Development: fatemes_portfolio" type="RailsRunConfigurationType" factoryName="Rails">
@@ -141,7 +158,7 @@
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TESTOPTS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_VERBOSE" VALUE="null" />
       <method v="2" />
     </configuration>
     <configuration name="test: fatemes_portfolio" type="RakeRunConfigurationType" factoryName="Rake">
@@ -167,7 +184,7 @@
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TESTOPTS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_VERBOSE" VALUE="null" />
       <method v="2" />
     </configuration>
     <configuration name="Unnamed" type="RubyRemoteDebugConfigurationType" factoryName="Ruby remote debug">
@@ -224,31 +241,29 @@
     </recent_temporary>
   </component>
   <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Docker" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Docker" type="9fbbdea:ServiceModel$ServiceNode" />
-                <item name="Compose: docker-compose.yml" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Docker" type="9fbbdea:ServiceModel$ServiceNode" />
-                <item name="Compose: docker-compose.yml" type="9fbbdea:ServiceModel$ServiceNode" />
-                <item name="web" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
-            </expand>
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@69d51d26" type="9fbbdea:ServiceModel$ServiceNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@69d51d26" type="9fbbdea:ServiceModel$ServiceNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@3e5cf438" type="9fbbdea:ServiceModel$ServiceNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@69d51d26" type="9fbbdea:ServiceModel$ServiceNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@3e5cf438" type="9fbbdea:ServiceModel$ServiceNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@1b303e30" type="9fbbdea:ServiceModel$ServiceNode" />
+            </path>
+          </expand>
+          <select />
+        </treeState>
+      </serviceView>
     </option>
   </component>
   <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" RAKE_SPRING_PRE_LOADER_OPTION="false" RAILS_SPRING_PRE_LOADER_OPTION="false" />
@@ -320,6 +335,7 @@
       <workItem from="1575580980690" duration="87000" />
       <workItem from="1575581810839" duration="58000" />
       <workItem from="1575603101368" duration="2026000" />
+      <workItem from="1575660192196" duration="4840000" />
     </task>
     <servers />
   </component>
@@ -340,65 +356,37 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="304" y="197" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575083445820">
-      <screen x="0" y="23" width="1680" height="1027" />
-    </state>
-    <state x="304" y="197" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1575083445820" />
-    <state x="698" y="418" key="DockerComposeFileDialog" timestamp="1575083441468">
-      <screen x="0" y="23" width="1680" height="1027" />
-    </state>
-    <state x="698" y="418" key="DockerComposeFileDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1575083441468" />
-    <state width="1638" height="409" key="GridCell.Tab.0.bottom" timestamp="1575083383182">
-      <screen x="0" y="23" width="1680" height="1027" />
-    </state>
-    <state width="1638" height="409" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1575083383182" />
-    <state width="1638" height="409" key="GridCell.Tab.0.center" timestamp="1575083383181">
-      <screen x="0" y="23" width="1680" height="1027" />
-    </state>
-    <state width="1638" height="409" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1575083383181" />
-    <state width="1638" height="409" key="GridCell.Tab.0.left" timestamp="1575083383181">
-      <screen x="0" y="23" width="1680" height="1027" />
-    </state>
-    <state width="1638" height="409" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1575083383181" />
-    <state width="1638" height="409" key="GridCell.Tab.0.right" timestamp="1575083383182">
-      <screen x="0" y="23" width="1680" height="1027" />
-    </state>
-    <state width="1638" height="409" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1575083383182" />
-    <state width="1638" height="409" key="GridCell.Tab.1.bottom" timestamp="1575083383183">
-      <screen x="0" y="23" width="1680" height="1027" />
-    </state>
-    <state width="1638" height="409" key="GridCell.Tab.1.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1575083383183" />
-    <state width="1638" height="409" key="GridCell.Tab.1.center" timestamp="1575083383182">
-      <screen x="0" y="23" width="1680" height="1027" />
-    </state>
-    <state width="1638" height="409" key="GridCell.Tab.1.center/0.23.1680.1027@0.23.1680.1027" timestamp="1575083383182" />
-    <state width="1638" height="409" key="GridCell.Tab.1.left" timestamp="1575083383182">
-      <screen x="0" y="23" width="1680" height="1027" />
-    </state>
-    <state width="1638" height="409" key="GridCell.Tab.1.left/0.23.1680.1027@0.23.1680.1027" timestamp="1575083383182" />
-    <state width="1638" height="409" key="GridCell.Tab.1.right" timestamp="1575083383182">
-      <screen x="0" y="23" width="1680" height="1027" />
-    </state>
-    <state width="1638" height="409" key="GridCell.Tab.1.right/0.23.1680.1027@0.23.1680.1027" timestamp="1575083383182" />
-    <state x="585" y="169" key="RollbackChangesDialog" timestamp="1575432280097">
-      <screen x="0" y="23" width="1680" height="1027" />
-    </state>
-    <state x="585" y="169" key="RollbackChangesDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1575432280097" />
-    <state x="349" y="185" key="SettingsEditor" timestamp="1575085239328">
-      <screen x="0" y="23" width="1680" height="1027" />
-    </state>
-    <state x="349" y="185" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1575085239328" />
-    <state x="497" y="155" width="685" height="762" key="find.popup" timestamp="1575252217222">
-      <screen x="0" y="23" width="1680" height="1027" />
-    </state>
-    <state x="497" y="155" width="685" height="762" key="find.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1575252217222" />
-    <state x="505" y="250" width="670" height="676" key="search.everywhere.popup" timestamp="1575254804839">
-      <screen x="0" y="23" width="1680" height="1027" />
-    </state>
-    <state x="505" y="250" width="670" height="676" key="search.everywhere.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1575254804839" />
+    <state x="304" y="197" key="#com.intellij.execution.impl.EditConfigurationsDialog" />
+    <state x="304" y="197" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.1027@0.23.1680.1027" />
+    <state x="698" y="418" key="DockerComposeFileDialog" />
+    <state x="698" y="418" key="DockerComposeFileDialog/0.23.1680.1027@0.23.1680.1027" />
+    <state width="1638" height="409" key="GridCell.Tab.0.bottom" />
+    <state width="1638" height="409" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" />
+    <state width="1638" height="409" key="GridCell.Tab.0.center" />
+    <state width="1638" height="409" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" />
+    <state width="1638" height="409" key="GridCell.Tab.0.left" />
+    <state width="1638" height="409" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" />
+    <state width="1638" height="409" key="GridCell.Tab.0.right" />
+    <state width="1638" height="409" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" />
+    <state width="1638" height="409" key="GridCell.Tab.1.bottom" />
+    <state width="1638" height="409" key="GridCell.Tab.1.bottom/0.23.1680.1027@0.23.1680.1027" />
+    <state width="1638" height="409" key="GridCell.Tab.1.center" />
+    <state width="1638" height="409" key="GridCell.Tab.1.center/0.23.1680.1027@0.23.1680.1027" />
+    <state width="1638" height="409" key="GridCell.Tab.1.left" />
+    <state width="1638" height="409" key="GridCell.Tab.1.left/0.23.1680.1027@0.23.1680.1027" />
+    <state width="1638" height="409" key="GridCell.Tab.1.right" />
+    <state width="1638" height="409" key="GridCell.Tab.1.right/0.23.1680.1027@0.23.1680.1027" />
+    <state x="585" y="169" key="RollbackChangesDialog" />
+    <state x="585" y="169" key="RollbackChangesDialog/0.23.1680.1027@0.23.1680.1027" />
+    <state x="349" y="185" key="SettingsEditor" />
+    <state x="349" y="185" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" />
+    <state x="497" y="155" width="685" height="762" key="find.popup" />
+    <state x="497" y="155" width="685" height="762" key="find.popup/0.23.1680.1027@0.23.1680.1027" />
+    <state x="505" y="250" width="670" height="676" key="search.everywhere.popup" />
+    <state x="505" y="250" width="670" height="676" key="search.everywhere.popup/0.23.1680.1027@0.23.1680.1027" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/fatemes_portfolio@Development__fatemes_portfolio.rcov" NAME="Development: fatemes_portfolio Coverage Results" MODIFIED="1575082738718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="fatemes_portfolio" />
     <SUITE FILE_PATH="coverage/fatemes_portfolio@seeds.rcov" NAME="seeds Coverage Results" MODIFIED="1574578473984" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/db" MODULE_NAME="fatemes_portfolio" />
+    <SUITE FILE_PATH="coverage/fatemes_portfolio@Development__fatemes_portfolio.rcov" NAME="Development: fatemes_portfolio Coverage Results" MODIFIED="1575082738718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="fatemes_portfolio" />
   </component>
 </project>
