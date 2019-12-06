@@ -14,6 +14,7 @@ Rails.application.config.assets.precompile += %w( actiontext.css )
 Rails.application.config.assets.precompile += %w( home.css )
 Rails.application.config.assets.precompile += %w( admin_panel.js )
 Rails.application.config.assets.precompile += %w( social_media.css )
+Rails.application.config.assets.precompile += %w( nav_bar.css )
 
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in the app/assets

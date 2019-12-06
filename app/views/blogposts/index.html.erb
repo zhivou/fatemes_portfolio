@@ -18,7 +18,7 @@
 
     <div class="row p-5">
 
-        <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
+        <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 site-font">
           <% for blogpost in 0..3 do %>
             <% unless @blogposts[blogpost].nil? %>
               <a href="blogposts/<%= @blogposts[blogpost].id %>" class="blogpost">
@@ -32,7 +32,7 @@
           <% end %>
         </div>
 
-      <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
+      <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 site-font">
         <% for blogpost in 4..7 do %>
           <% unless @blogposts[blogpost].nil? %>
             <a href="blogposts/<%= @blogposts[blogpost].id %>" class="blogpost">
@@ -46,7 +46,7 @@
         <% end %>
       </div>
 
-      <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
+      <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 site-font">
         <% for blogpost in 8..11 do %>
           <% unless @blogposts[blogpost].nil? %>
             <a href="blogposts/<%= @blogposts[blogpost].id %>" class="blogpost">
@@ -60,7 +60,7 @@
         <% end %>
       </div>
 
-      <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
+      <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 site-font">
         <% for blogpost in 12..15 do %>
           <% unless @blogposts[blogpost].nil? %>
             <a href="blogposts/<%= @blogposts[blogpost].id %>" class="blogpost">
