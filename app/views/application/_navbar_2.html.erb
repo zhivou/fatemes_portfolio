@@ -10,9 +10,6 @@
     <% if admin_signed_in? %>
       <%= link_to "Logout", destroy_admin_session_path, method: :delete, class: "py-2 d-none d-md-inline-block upper nav-link" %>
       <%= link_to "Admin", admin_panel_path, class: "py-2 d-none d-md-inline-block upper nav-link " %>
-    <% else %>
-      <%= link_to "Login", new_admin_session_path, class: "py-2 d-none d-md-inline-block upper nav-link" %>
-      <%= link_to "Register", new_admin_registration_path, class: "py-2 d-none d-md-inline-block upper nav-link" if Admin.count == 0%>
     <% end %>
   </div>
 </nav>
