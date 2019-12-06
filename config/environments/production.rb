@@ -113,4 +113,17 @@ Rails.application.configure do
   # Devise
   # TODO In production, :host should be set to the actual host of your application.
   config.action_mailer.default_url_options = {}
+
+  ##
+  # SendGrid Settings
+  #
+  ActionMailer::Base.smtp_settings = {
+      :user_name => ENV['SENDGRID_USERNAME'],
+      :password => ENV['SENDGRID_PASSWORD'],
+      :domain => 'esmailie.com',
+      :address => 'smtp.sendgrid.net',
+      :port => 587,
+      :authentication => :plain,
+      :enable_starttls_auto => true
+  }
 end
