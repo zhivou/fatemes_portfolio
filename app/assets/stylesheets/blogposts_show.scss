@@ -373,3 +373,7 @@
   font-size: 80px;
   text-transform: uppercase;
 }
+
+.to-front-view {
+  z-index: 1000 !important;
+}
