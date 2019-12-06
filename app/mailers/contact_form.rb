@@ -7,7 +7,7 @@ class ContactForm < MailForm::Base
   def headers
     {
         :subject => "MY WEBSITE: CONTACT ME PAGE MESSAGE",
-        :to => "esmaili.fateme.1412@gmail.com",
+        :to => ENV["MY_EMAIL"],
         :from => %("#{name}" <#{email}>)
     }
   end

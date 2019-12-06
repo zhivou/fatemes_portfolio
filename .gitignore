@@ -129,3 +129,4 @@ build-iPhoneSimulator/
 !/.idea/workspace.xml
 !/.idea/fatemes_portfolio.iml
 .idea/*
+/config/local_env.yml
