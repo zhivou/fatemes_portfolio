@@ -30,6 +30,13 @@
           class="collapse <%= "show" if @first %>"
           aria-labelledby="heading<%= teaching.id.to_s %>"
           data-parent="#accordionTeaching">
+
+          <% if teaching.video.attached? %>
+            <div class="embed-responsive embed-responsive-16by9">
+              <%= video_tag rails_blob_path(teaching.video), controls: true, class: 'p-3' %>
+            </div>
+          <% end %>
+
           <div class="card-body reach-text">
             <%= teaching.body_area %>
           </div>
