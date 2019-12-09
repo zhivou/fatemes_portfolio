@@ -1,38 +1,44 @@
 <%= stylesheet_link_tag "nav_bar" %>
 
 <nav class="navbar navbar-expand-lg sticky-top pl-3 site-header">
-  <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-    <i class="fa fa-bars navbar-toggler-icon" style="font-size: 2em !important;"></i>
+  <button class="navbar-toggler collapsed m-3 p-0"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+    <i class="fa fa-bars navbar-toggler-icon" id="humburger-button" style="font-size: 5em !important; width: 100px; height: 100px;"></i>
   </button>
   <div class="collapse navbar-collapse" id="navbarCollapse">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="p-2 upper nav-link <%= 'active' if params[:controller] == 'home' %>" href="/">Home</a>
+        <a class="p-2 upper nav-link h3 m-0 <%= 'active' if params[:controller] == 'home' %>" href="/">Home</a>
       </li>
       <li class="nav-item">
-        <%= link_to "CV", cvs_path, class: "p-2 upper nav-link #{'active' if params[:controller] == 'cvs'}" %>
+        <%= link_to "CV", cvs_path, class: "m-0 h3 p-2 upper nav-link #{'active' if params[:controller] == 'cvs'}" %>
       </li>
       <li class="nav-item">
-        <%= link_to "Teaching", teachings_path, class: "p-2 upper nav-link #{'active' if params[:controller] == 'teachings'}" %>
+        <%= link_to "Teaching", teachings_path, class: "m-0 h3 p-2 upper nav-link #{'active' if params[:controller] == 'teachings'}" %>
       </li>
       <li class="nav-item">
-        <%= link_to "Research", researches_path, class: "p-2 upper nav-link #{'active' if params[:controller] == 'researches'}" %>
+        <%= link_to "Research", researches_path, class: "m-0 h3 p-2 upper nav-link #{'active' if params[:controller] == 'researches'}" %>
       </li>
       <li class="nav-item">
-        <%= link_to "Service", services_path, class: "p-2 upper nav-link #{'active' if params[:controller] == 'services'}" %>
+        <%= link_to "Service", services_path, class: "m-0 h3 p-2 upper nav-link #{'active' if params[:controller] == 'services'}" %>
       </li>
       <li class="nav-item">
-        <%= link_to "Blogs", blogposts_path, class: "p-2 upper nav-link #{'active' if params[:controller] == 'blogposts'}" %>
+        <%= link_to "Blogs", blogposts_path, class: "m-0 h3 p-2 upper nav-link #{'active' if params[:controller] == 'blogposts'}" %>
       </li>
       <li class="nav-item">
-        <a class="p-2 upper nav-link <%= 'active' if params[:controller] == 'contacts' %>" href="/contacts">Contact</a>
+        <a class="m-0 h3 p-2 upper nav-link <%= 'active' if params[:controller] == 'contacts' %>" href="/contacts">Contact</a>
       </li>
       <% if admin_signed_in? %>
         <li class="nav-item">
-          <%= link_to "Logout", destroy_admin_session_path, method: :delete, class: "p-2 upper nav-link" %>
+          <%= link_to "Logout", destroy_admin_session_path, method: :delete, class: "m-0 h3 p-2 upper nav-link" %>
         </li>
         <li class="nav-item">
-          <%= link_to "Admin", admin_panel_path, class: "p-2 upper nav-link " %>
+          <%= link_to "Admin", admin_panel_path, class: "m-0 h3 p-2 upper nav-link " %>
         </li>
       <% end %>
     </ul>
