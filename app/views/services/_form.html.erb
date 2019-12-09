@@ -16,9 +16,8 @@
     <%= form.text_field :title, class: "form-control" %>
   </div>
 
-  <div class="field">
-    <%= form.label :body %>
-    <%= form.text_area :body, class: "form-control" %>
+  <div class="field mt-3">
+    <%= form.rich_text_area :body_area, id: :blog_body_area %>
   </div>
 
   <div class="actions mt-3">

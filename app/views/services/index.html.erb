@@ -11,13 +11,13 @@
   <% @services.each do |service| %>
     <div class="mt-5">
       <div>
-        <div class="text-center h2 p-3 ml-5 mr-5">
+        <div class="text-center h2 p-3 ml-5 mr-5 darkred upper">
           <%= service.title %>
         </div>
       </div>
 
-      <div class="reach-text">
-        <%= service.body %>
+      <div class="card-body reach-text">
+        <%= service.body_area %>
       </div>
 
       <% if admin_signed_in? %>
