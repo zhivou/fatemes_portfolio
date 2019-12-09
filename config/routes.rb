@@ -20,4 +20,5 @@ Rails.application.routes.draw do
   post 'admin_panel/update_cv_page', to: "admin_panel#update_cv_page"
   post 'admin_panel/update_scholar', to: "admin_panel#update_scholar"
   post 'admin_panel/force_load_citation', to: "admin_panel#force_load_citation"
+  post 'admin_panel/update_teaching_page', to: 'admin_panel#update_teaching_page'
 end

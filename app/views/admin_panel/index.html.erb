@@ -98,7 +98,7 @@
 
   <div class="collapse p-3" id="collapseCV">
     <div class="card card-body">
-      <h3>Contact Page</h3>
+      <h3>CV Page</h3>
       <form id="cvPageForm">
         <div class="form-group cv_page mt-3">
           <label for="cvDocInput">Document link</label>
@@ -116,9 +116,39 @@
     </div>
   </div>
 
+
+
+
+
+  <button class="btn btn-primary btn-block mt-3" type="button" data-toggle="collapse" data-target="#collapseTeaching" aria-expanded="false" aria-controls="collapseTeaching">
+    Teaching Page
+  </button>
+
+  <div class="collapse p-3" id="collapseTeaching">
+    <div class="card card-body">
+      <h3>Teaching Page</h3>
+      <form id="teachingPageForm">
+        <div class="form-group teaching_page mt-3">
+          <label for="teachingTitleInput">Title</label>
+          <input type="text" class="form-control" id="teachingTitleInput" value="<%= @teaching_page['title'] %>">
+
+          <label for="teachingSeoKeywordInput">SEO Keywords</label>
+          <input type="text" class="form-control" id="teachingSeoKeywordInput" aria-describedby="emailHelp" value="<%= @teaching_page['seo_keywords'] %>">
+
+          <label for="teachingSeoDescriptionInput">SEO Description</label>
+          <textarea class="form-control" id="teachingSeoDescriptionInput" rows="3"><%= @teaching_page['seo_description'] %></textarea>
+
+          <input type="submit" class="btn btn-warning mt-3">
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+
   <div class="card mt-3 p-4">
     <h3>Google Scholar</h3>
-    Add me here
+    Ask dev when it needs to be developed
   </div>
 
 

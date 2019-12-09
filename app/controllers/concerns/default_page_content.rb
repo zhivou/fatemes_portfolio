@@ -74,7 +74,7 @@ module DefaultPageContent
             seo_description: 'Here is my CV please review, Add more description here'
         },
         teaching_page: {
-            title: 'Teaching',
+            title: 'Teaching Portfolio',
             seo_keywords: 'Teaching, Page',
             seo_description: 'Here are my teaching experiences'
         },

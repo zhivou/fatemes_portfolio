@@ -43,11 +43,13 @@ $( document ).ready(function() {
     sendFormHandler(cvPageInputs, 'update_cv_page');
   });
 
-  $( "#scholarForm" ).submit(function( event ) {
+  $( "#teachingPageForm" ).submit(function( event ) {
     event.preventDefault();
-    let scholarPageInputs = {};
-    scholarPageInputs.link = $("#scholarInput").val();
-    sendFormHandler(scholarPageInputs, 'update_scholar');
+    let teachingPageInputs = {};
+    teachingPageInputs.title = $("#teachingTitleInput").val();
+    teachingPageInputs.seo_keywords = $("#teachingSeoKeywordInput").val();
+    teachingPageInputs.seo_description = $("#teachingSeoDescriptionInput").val();
+    sendFormHandler(teachingPageInputs, 'update_teaching_page');
   });
 
   function sendFormHandler(inputs, apiPoint) {
