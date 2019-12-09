@@ -13,7 +13,7 @@ body {
 
 .site-font {
   font-family: 'Roboto Slab', serif !important;
-  font-size: 1.6em;
+  font-size: 2em;
 }
 
 .underline_border {
@@ -97,4 +97,22 @@ a:hover {
 
 .font-me {
   font-family: 'Roboto Slab', serif !important;
+}
+
+@media (max-width: 992px) {
+  .sticky-top{
+    position: absolute !important;
+  }
+
+  .nav-link {
+    color: white;
+    font-size: 5em !important;
+    background: rgba(51,51,51,0.9);
+  }
+  .container {
+    margin-top: 80px;
+  }
+  .container-font {
+    margin-top: 80px;
+  }
 }
