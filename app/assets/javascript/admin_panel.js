@@ -52,6 +52,15 @@ $( document ).ready(function() {
     sendFormHandler(teachingPageInputs, 'update_teaching_page');
   });
 
+  $( "#servicePageForm" ).submit(function( event ) {
+    event.preventDefault();
+    let servicePageInputs = {};
+    servicePageInputs.title = $("#serviceTitleInput").val();
+    servicePageInputs.seo_keywords = $("#serviceSeoKeywordInput").val();
+    servicePageInputs.seo_description = $("#serviceSeoDescriptionInput").val();
+    sendFormHandler(servicePageInputs, 'update_service_page');
+  });
+
   function sendFormHandler(inputs, apiPoint) {
     let base_url = gon.base_url;
 

@@ -146,6 +146,36 @@
 
 
 
+
+
+  <button class="btn btn-primary btn-block mt-3" type="button" data-toggle="collapse" data-target="#collapseService" aria-expanded="false" aria-controls="collapseService">
+    Service Page
+  </button>
+
+  <div class="collapse p-3" id="collapseService">
+    <div class="card card-body">
+      <h3>Service Page</h3>
+      <form id="servicePageForm">
+        <div class="form-group service_page mt-3">
+          <label for="serviceTitleInput">Title</label>
+          <input type="text" class="form-control" id="serviceTitleInput" value="<%= @service_page['title'] %>">
+
+          <label for="serviceSeoKeywordInput">SEO Keywords</label>
+          <input type="text" class="form-control" id="serviceSeoKeywordInput" aria-describedby="emailHelp" value="<%= @service_page['seo_keywords'] %>">
+
+          <label for="serviceSeoDescriptionInput">SEO Description</label>
+          <textarea class="form-control" id="serviceSeoDescriptionInput" rows="3"><%= @service_page['seo_description'] %></textarea>
+
+          <input type="submit" class="btn btn-warning mt-3">
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+
+
+
   <div class="card mt-3 p-4">
     <h3>Google Scholar</h3>
     Ask dev when it needs to be developed
