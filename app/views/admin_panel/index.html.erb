@@ -143,10 +143,10 @@
       <form id="blogPageForm">
         <div class="form-group blog_page mt-3">
           <label for="blogTitleInput">Title</label>
-          <input type="text" class="form-control" id="blogTitleInput" value="<%= @blog['title'] %>">
+          <input type="text" class="form-control" id="blogTitleInput" value="<%= @blog_page['title'] %>">
 
           <label for="blogSeoKeywordInput">SEO Keywords</label>
-          <input type="text" class="form-control" id="blogSeoKeywordInput" aria-describedby="emailHelp" value="<%= @blog['seo_keywords'] %>">
+          <input type="text" class="form-control" id="blogSeoKeywordInput" aria-describedby="emailHelp" value="<%= @blog_page['seo_keywords'] %>">
 
           <label for="blogSeoDescriptionInput">SEO Description</label>
           <textarea class="form-control" id="blogSeoDescriptionInput" rows="3"><%= @blog_page['seo_description'] %></textarea>
