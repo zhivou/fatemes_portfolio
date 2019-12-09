@@ -20,6 +20,11 @@
     <%= form.rich_text_area :body_area, id: :blog_body_area %>
   </div>
 
+  <div>
+    <%= form.label :video %>
+    <%= form.file_field :video %>
+  </div>
+
   <div class="actions mt-3">
     <%= form.submit %>
   </div>

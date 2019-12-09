@@ -4,9 +4,17 @@
 <% @teachings.each { |r| @seo_keywords += (", " + r.title) } %>
 <% @seo_description = t(:teaching_page)[:seo_description] %>
 
-<div class="container pt-3 pr-5 pl-5 pb-5">
+
+<div class=" pt-3 pr-5 pl-5">
   <div class="header-font text-center text-break">
     Teaching Portfolio
+  </div>
+</div>
+<div class="container pb-5">
+
+
+  <div>
+    <%= image_tag 'teaching.jpg', class: "img-fluid" %>
   </div>
 
   <div class="accordion mt-3" id="accordionTeaching">
@@ -20,7 +28,7 @@
               data-target="#collapse<%= teaching.id.to_s %>"
               aria-expanded="true"
               aria-controls="collapseOne">
-              <%= teaching.title %>
+              <h3 class="darkred flash-me">>> <%= teaching.title %></h3>
             </button>
           </h2>
         </div>
@@ -30,6 +38,13 @@
           class="collapse <%= "show" if @first %>"
           aria-labelledby="heading<%= teaching.id.to_s %>"
           data-parent="#accordionTeaching">
+
+          <% if teaching.video.attached? %>
+            <div class="embed-responsive embed-responsive-16by9">
+              <%= video_tag rails_blob_path(teaching.video), controls: true, class: 'p-3' %>
+            </div>
+          <% end %>
+
           <div class="card-body reach-text">
             <%= teaching.body_area %>
           </div>
@@ -52,3 +67,7 @@
 </div>
 
 <%= render 'application/social_media' %>
+
+<script type="text/javascript" charset="utf-8">
+  $('.flash-me')
+</script>
