@@ -1,11 +1,11 @@
 <% @page_title = "Service | Fateme Esmailie" %>
-<% @seo_keywords += t(:service_page)[:seo_keywords] %>
+<% @seo_keywords += @service_page['seo_keywords'] %>
 <% @services.each { |r| @seo_keywords += (", " + r.title) } %>
-<% @seo_description = t(:service_page)[:seo_description] %>
+<% @seo_description = @service_page['seo_description'] %>
 
 <div class="container pt-3 pr-5 pl-5 pb-5">
   <div class="header-font text-center text-break">
-    <%= t(:service_page)[:title] %>
+    <%= @service_page['title'] %>
   </div>
 
   <% @services.each do |service| %>
@@ -31,7 +31,7 @@
 </div>
 
 <div class="container">
-  <%= link_to 'New Service', new_service_path if admin_signed_in?%>
+  <%= link_to 'New Service', new_service_path if admin_signed_in? %>
 </div>
 
 <%= render 'application/social_media' %>

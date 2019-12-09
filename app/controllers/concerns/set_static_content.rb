@@ -14,5 +14,6 @@ module SetStaticContent
     @teaching_page = defaults['teaching_page']
     @service_page = defaults['service_page']
     @google_scholar = defaults['google_scholar']
+    @blog_page = defaults['blog_page']
   end
 end

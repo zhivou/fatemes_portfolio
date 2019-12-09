@@ -33,6 +33,54 @@
     </div>
   </div>
 
+  <button class="btn btn-primary btn-block mt-3" type="button" data-toggle="collapse" data-target="#collapseCV" aria-expanded="false" aria-controls="collapseCV">
+    CV Page
+  </button>
+
+  <div class="collapse p-3" id="collapseCV">
+    <div class="card card-body">
+      <h3>CV Page</h3>
+      <form id="cvPageForm">
+        <div class="form-group cv_page mt-3">
+          <label for="cvDocInput">Document link</label>
+          <input type="text" class="form-control" id="cvDocInput" value="<%= @cv_page['doc'] %>">
+
+          <label for="cvSeoKeywordInput">SEO Keywords</label>
+          <input type="text" class="form-control" id="cvSeoKeywordInput" aria-describedby="emailHelp" value="<%= @cv_page['seo_keywords'] %>">
+
+          <label for="cvSeoDescriptionInput">SEO Description</label>
+          <textarea class="form-control" id="cvSeoDescriptionInput" rows="3"><%= @cv_page['seo_description'] %></textarea>
+
+          <input type="submit" class="btn btn-warning mt-3">
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <button class="btn btn-primary btn-block mt-3" type="button" data-toggle="collapse" data-target="#collapseTeaching" aria-expanded="false" aria-controls="collapseTeaching">
+    Teaching Page
+  </button>
+
+  <div class="collapse p-3" id="collapseTeaching">
+    <div class="card card-body">
+      <h3>Teaching Page</h3>
+      <form id="teachingPageForm">
+        <div class="form-group teaching_page mt-3">
+          <label for="teachingTitleInput">Title</label>
+          <input type="text" class="form-control" id="teachingTitleInput" value="<%= @teaching_page['title'] %>">
+
+          <label for="teachingSeoKeywordInput">SEO Keywords</label>
+          <input type="text" class="form-control" id="teachingSeoKeywordInput" aria-describedby="emailHelp" value="<%= @teaching_page['seo_keywords'] %>">
+
+          <label for="teachingSeoDescriptionInput">SEO Description</label>
+          <textarea class="form-control" id="teachingSeoDescriptionInput" rows="3"><%= @teaching_page['seo_description'] %></textarea>
+
+          <input type="submit" class="btn btn-warning mt-3">
+        </div>
+      </form>
+    </div>
+  </div>
+
 
   <button class="btn btn-primary btn-block mt-3" type="button" data-toggle="collapse" data-target="#collapseResearch" aria-expanded="false" aria-controls="collapseResearch">
     Research Page
@@ -61,6 +109,56 @@
     </div>
   </div>
 
+  <button class="btn btn-primary btn-block mt-3" type="button" data-toggle="collapse" data-target="#collapseService" aria-expanded="false" aria-controls="collapseService">
+    Service Page
+  </button>
+
+  <div class="collapse p-3" id="collapseService">
+    <div class="card card-body">
+      <h3>Service Page</h3>
+      <form id="servicePageForm">
+        <div class="form-group service_page mt-3">
+          <label for="serviceTitleInput">Title</label>
+          <input type="text" class="form-control" id="serviceTitleInput" value="<%= @service_page['title'] %>">
+
+          <label for="serviceSeoKeywordInput">SEO Keywords</label>
+          <input type="text" class="form-control" id="serviceSeoKeywordInput" aria-describedby="emailHelp" value="<%= @service_page['seo_keywords'] %>">
+
+          <label for="serviceSeoDescriptionInput">SEO Description</label>
+          <textarea class="form-control" id="serviceSeoDescriptionInput" rows="3"><%= @service_page['seo_description'] %></textarea>
+
+          <input type="submit" class="btn btn-warning mt-3">
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <button class="btn btn-primary btn-block mt-3" type="button" data-toggle="collapse" data-target="#collapseBlog" aria-expanded="false" aria-controls="collapseBlog">
+    Blog Page
+  </button>
+
+  <div class="collapse p-3" id="collapseBlog">
+    <div class="card card-body">
+      <h3>Blog Page</h3>
+      <form id="blogPageForm">
+        <div class="form-group blog_page mt-3">
+          <label for="blogTitleInput">Title</label>
+          <input type="text" class="form-control" id="blogTitleInput" value="">
+          <%#= @blog['title'] %>
+
+          <label for="blogSeoKeywordInput">SEO Keywords</label>
+          <input type="text" class="form-control" id="blogSeoKeywordInput" aria-describedby="emailHelp" value="">
+          <%#= @blog['seo_keywords'] %>
+
+          <label for="blogSeoDescriptionInput">SEO Description</label>
+          <textarea class="form-control" id="blogSeoDescriptionInput" rows="3"></textarea>
+          <%#= @blog_page['seo_description'] %>
+
+          <input type="submit" class="btn btn-warning mt-3">
+        </div>
+      </form>
+    </div>
+  </div>
 
   <button class="btn btn-primary btn-block mt-3" type="button" data-toggle="collapse" data-target="#collapseContact" aria-expanded="false" aria-controls="collapseContact">
     Contact Page
@@ -89,37 +187,8 @@
     </div>
   </div>
 
-
-
-
-  <button class="btn btn-primary btn-block mt-3" type="button" data-toggle="collapse" data-target="#collapseCV" aria-expanded="false" aria-controls="collapseCV">
-    CV Page
-  </button>
-
-  <div class="collapse p-3" id="collapseCV">
-    <div class="card card-body">
-      <h3>Contact Page</h3>
-      <form id="cvPageForm">
-        <div class="form-group cv_page mt-3">
-          <label for="cvDocInput">Document link</label>
-          <input type="text" class="form-control" id="cvDocInput" value="<%= @cv_page['doc'] %>">
-
-          <label for="cvSeoKeywordInput">SEO Keywords</label>
-          <input type="text" class="form-control" id="cvSeoKeywordInput" aria-describedby="emailHelp" value="<%= @cv_page['seo_keywords'] %>">
-
-          <label for="cvSeoDescriptionInput">SEO Description</label>
-          <textarea class="form-control" id="cvSeoDescriptionInput" rows="3"><%= @cv_page['seo_description'] %></textarea>
-
-          <input type="submit" class="btn btn-warning mt-3">
-        </div>
-      </form>
-    </div>
-  </div>
-
   <div class="card mt-3 p-4">
     <h3>Google Scholar</h3>
-    Add me here
+    Ask dev when it needs to be developed
   </div>
-
-
 </div>

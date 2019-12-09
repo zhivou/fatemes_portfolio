@@ -66,17 +66,17 @@ module DefaultPageContent
             title: 'Contact Me',
             about: 'Please use the form below to contact me',
             seo_keywords: 'CV, Else',
-            seo_description: 'Here is my CV please review'
+            seo_description: 'Add description'
         },
         cv_page: {
             doc: 'https://drive.google.com/file/d/1wsm0mBcmoK-1HNQBzKeEKilOzHPk8SdU/preview',
             seo_keywords: 'CV, else',
-            seo_description: 'Here is my CV please review, Add more description here'
+            seo_description: 'Add description'
         },
         teaching_page: {
-            title: 'Teaching',
+            title: 'Teaching Portfolio',
             seo_keywords: 'Teaching, Page',
-            seo_description: 'Here are my teaching experiences'
+            seo_description: 'Add description'
         },
         service_page: {
             title: 'Service',
@@ -85,6 +85,11 @@ module DefaultPageContent
         },
         google_scholar: {
           link: 'https://scholar.google.com/citations?hl=en&user=0wPISvEAAAAJ'
+        },
+        blog_page: {
+          title: 'Blogposts',
+          seo_keywords: 'Blogs, Page',
+          seo_description: 'Add description'
         }
     }
   end
@@ -97,7 +102,7 @@ module DefaultPageContent
 
   private
   #
-  # Add more blow:
+  # Add more below:
   #
   def standard_seo_words
     "Fateme Esmailie Thermal Engineer, Bio-heat Transfer, Engineer, Thermal Management of Electromagnetic devices, FEM"

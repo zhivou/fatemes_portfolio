@@ -60,6 +60,39 @@ class AdminPanelController < ApplicationController
     update_locales('link', params[:link], 'google_scholar')
   end
 
+  def update_teaching_page
+    unless params[:title] && params[:seo_keywords] && params[:seo_description]
+      render status: 500, json: {
+        message: "Wrong params. Contact Web Administrator"
+      }
+    end
+    update_locales('title', params[:title], 'teaching_page')
+    update_locales('seo_keywords', params[:seo_keywords], 'teaching_page')
+    update_locales('seo_description', params[:seo_description], 'teaching_page')
+  end
+
+  def update_service_page
+    unless params[:title] && params[:seo_keywords] && params[:seo_description]
+      render status: 500, json: {
+        message: "Wrong params. Contact Web Administrator"
+      }
+    end
+    update_locales('title', params[:title], 'service_page')
+    update_locales('seo_keywords', params[:seo_keywords], 'service_page')
+    update_locales('seo_description', params[:seo_description], 'service_page')
+  end
+
+  def update_blog_page
+    unless params[:title] && params[:seo_keywords] && params[:seo_description]
+      render status: 500, json: {
+        message: "Wrong params. Contact Web Administrator"
+      }
+    end
+    update_locales('title', params[:title], 'blog_page')
+    update_locales('seo_keywords', params[:seo_keywords], 'blog_page')
+    update_locales('seo_description', params[:seo_description], 'blog_page')
+  end
+
   def force_load_citation
     load_citations(true)
   end
