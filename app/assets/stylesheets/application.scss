@@ -102,11 +102,16 @@ a:hover {
 @media (max-width: 992px) {
   .sticky-top{
     position: absolute !important;
+    background: rgba(51,51,51,0.3);
+  }
+
+  #humburger-button {
+    color: white;
   }
 
   .nav-link {
     color: white;
-    font-size: 5em !important;
+    font-size: 6em !important;
     background: rgba(51,51,51,0.9);
   }
   .container {
