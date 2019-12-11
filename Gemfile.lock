@@ -352,6 +352,7 @@ DEPENDENCIES
   debase
   devise (~> 4.7, >= 4.7.1)
   faker
+  faraday
   font-awesome-rails (~> 4.7)
   gon
   google-cloud-storage (~> 1.18, >= 1.18.2)
