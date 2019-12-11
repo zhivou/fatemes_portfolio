@@ -2,7 +2,9 @@ class AdminPanelController < ApplicationController
 
   before_action :authenticate_admin!
 
-  def index; end
+  def index
+    @publications_faraday =  Google::Scholar::Helper::Base.new(@google_scholar).publications
+  end
 
   def update_home_page
     unless params[:name] && params[:about] && params[:seo_keywords] && params[:seo_description]

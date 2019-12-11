@@ -13,7 +13,7 @@ module SetStaticContent
     @cv_page = defaults['cv_page']
     @teaching_page = defaults['teaching_page']
     @service_page = defaults['service_page']
-    @google_scholar = defaults['google_scholar']
+    @google_scholar = 'https://scholar.google.com/citations?user=0wPISvEAAAAJ&hl=en'
     @blog_page = defaults['blog_page']
   end
 end

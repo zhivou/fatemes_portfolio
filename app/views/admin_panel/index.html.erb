@@ -187,7 +187,9 @@
   <div class="card mt-3 p-4">
     <h3>Google Scholar</h3>
     Ask dev when it needs to be developed
+
+    <% @publications_faraday.each do |p| %>
+      <div><%= p %></div>
+    <% end %>
   </div>
 </div>
-
-<%= Faraday.get('https://scholar.google.com/citations?user=0wPISvEAAAAJ&hl=en').body %>
