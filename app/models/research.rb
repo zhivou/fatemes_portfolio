@@ -6,5 +6,6 @@ class Research < ApplicationRecord
 
   validates_presence_of :title, :main_image
   has_one_attached :main_image
+  has_one_attached :video
   has_rich_text :body_area
 end

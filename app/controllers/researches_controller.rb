@@ -77,6 +77,7 @@ class ResearchesController < ApplicationController
         :title,
         :main_image,
         :body_area,
+        :video,
         publications_attributes: [:id, :name, :publisher, :_destroy])
     end
 end
