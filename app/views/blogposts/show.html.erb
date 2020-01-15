@@ -14,31 +14,28 @@
       </div>
     </div>
 
-    <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8 no_padding d-flex align-items-center justify-content-center">
+    <div class="col-sm-12 col-md-12 col-lg-8 col-xl-12 no_padding d-flex align-items-center justify-content-center">
       <%= image_tag @blogpost.main_image.variant(combine_options: { resize: '^728', resize_to_fill: [1300, 728] }), class: "img-fluid", style: "height: 70vh; object-fit: cover; max-height: " %>
     </div>
 
-    <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 d-sm-none d-md-none d-lg-block d-xl-block text-center text-break stick-me pt-5">
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center text-break">
       <div class="header-font-show p-5" style="max-height: 790px !important;"><%= @blogpost.title %></div>
       <%= link_to 'Back', blogposts_path, class: "btn btn-outline-dark" %>
     </div>
 
-    <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 d-sm-block d-md-block d-lg-none d-xl-none text-center text-break">
-      <div class="header-font-show p-5" style="max-height: 790px !important;"><%= @blogpost.title %></div>
-      <%= link_to 'Back', blogposts_path, class: "btn btn-outline-dark" %>
-    </div>
-
-    <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8">
+    <div class="container">
       <div class="reach-text p-5 body-text"><%= @blogpost.body_area %></div>
       <div class="div-block-7">
         <div class="text-block-8">By Fateme Esmaile, 2019</div>
+      </div>
+      <div class="text-center mb-4">
+        <%= link_to 'Back', blogposts_path, class: "btn btn-outline-dark text-center" %>
       </div>
     </div>
 
   </div>
 
   <%= link_to 'Edit |', edit_blogpost_path(@blogpost) if admin_signed_in?%>
-  <%= link_to 'Back |', blogposts_path %>
   <%= link_to 'Destroy', @blogpost, method: :delete, data: { confirm: 'Are you sure?' } if admin_signed_in?%>
 
   <%= render 'application/social_media' %>
